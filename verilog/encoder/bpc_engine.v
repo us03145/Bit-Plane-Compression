@@ -24,7 +24,6 @@ module BPC_ENGINE
     output  wire		ready_o    
 );
 
-    reg		[15:0]		orig_buf, orig_buf_n;
     reg		[15:0]		delta [0:62];
     reg		[15:0]		baseword_1;
     reg		[3:0]		bcnt_1, bcnt_1_n;
@@ -81,17 +80,16 @@ module BPC_ENGINE
     // stage 1 (delta, bp)
     always @(*) begin
 	bcnt_1_n = bcnt_1;
-	orig_buf_n = orig_buf;
 	valid_mid_n = 0;
 	if (valid_i & ready_i) begin
       	    if (sop_i) begin
 		baseword_1 = data_i[63:48];
 	    end else begin
-		delta[(bcnt_1*4)-1] = data_i[63:48] - orig_buf;
+		delta[(bcnt_1*4)-1] = data_i[63:48] - baseword_1;
 	    end
-	    delta[bcnt_1*4] = data_i[47:32] - data_i[63:48]; 
-	    delta[(bcnt_1*4)+1] = data_i[31:16] - data_i[47:32];
-	    delta[(bcnt_1*4)+2] = data_i[15:0] - data_i[31:16];
+	    delta[bcnt_1*4] = data_i[47:32] - baseword_1; 
+	    delta[(bcnt_1*4)+1] = data_i[31:16] - baseword_1;
+	    delta[(bcnt_1*4)+2] = data_i[15:0] - baseword_1;
 	    bcnt_1_n = bcnt_1 + 1;
 	    if (eop_i) begin
 		// delta, baseword toss
@@ -102,10 +100,7 @@ module BPC_ENGINE
 	            end
 		end
 		baseword_buf = baseword_1;
-		orig_buf_n = 0;
 		valid_mid_n = 1;
-	    end else begin
-		orig_buf_n = data_i[15:0];
             end
         end
     end
@@ -227,7 +222,6 @@ module BPC_ENGINE
   
     always @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
-	    orig_buf <= 'b0;
 	    bcnt_1 <= 'b0;
 	    valid_mid <= 'b0;
 	    bcnt_2 <= 'b0;
@@ -240,7 +234,6 @@ module BPC_ENGINE
 	    valid_out <= 'b0;
 	    stage_2 <= 'b0;
         end else begin
-	    orig_buf <= orig_buf_n;
 	    bcnt_1 <= bcnt_1_n;
 	    valid_mid <= valid_mid_n;
 	    bcnt_2 <= bcnt_2_n;
