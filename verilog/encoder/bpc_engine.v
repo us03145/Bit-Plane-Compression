@@ -129,8 +129,7 @@ module BPC_ENGINE
 	    end
 	    dbx[0] = dbp[0];
 	    len_cnt_n = 0;
-	    bcnt_2 = 0;
-	    stage_2 = 1;
+	    bcnt_2_n = 0;
 	    stage_2_n = 1;
         end
 	if (stage_2 & ready_i) begin
@@ -228,20 +227,9 @@ module BPC_ENGINE
   
     always @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
-	    for (i = 0; i < 63; i = i + 1) begin
-                delta[i] <= 'b0;
-	    end
-	    for (i = 0; i < 16; i = i + 1) begin
-                dbp[i] <= 'b0;
-	    end
-	    for (i = 0; i < 16; i = i + 1) begin
-                dbx[i] <= 'b0;
-	    end
 	    orig_buf <= 'b0;
-	    baseword_1 <= 'b0;
 	    bcnt_1 <= 'b0;
 	    valid_mid <= 'b0;
-	    baseword_2 <= 'b0;
 	    bcnt_2 <= 'b0;
 	    len_cnt <= 'b0;
 	    send_cnt <= 'b0;

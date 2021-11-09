@@ -1,4 +1,3 @@
-
 module BPC_CODEBUF
 (
 	input wire [145:0]   		data_i,

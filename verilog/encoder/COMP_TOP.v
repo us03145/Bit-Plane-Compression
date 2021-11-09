@@ -82,6 +82,7 @@ module COMP_TOP #(
     wire  [63:0]  sr_data_out;
     wire          sr_size_out;
     wire          sr_ready_out;
+    wire          sr_ready_in;
     wire          sr_d_valid;
     wire          sr_s_valid;
     
@@ -350,9 +351,6 @@ module COMP_TOP #(
     always @(posedge clk or negedge rst_n) begin
 	if (~rst_n) begin
             bcnt <= 'b0;
-	    valid_out <= 'b0;
-	    sop_out <= 'b0;
-	    eop_out <= 'b0;
         end else begin
             bcnt <= bcnt_n;
         end
