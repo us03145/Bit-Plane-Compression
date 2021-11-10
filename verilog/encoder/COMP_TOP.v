@@ -1,10 +1,10 @@
 module COMP_TOP #(
     parameter   D_BITWIDTH        = 64,
-    parameter   D_STAGE           = 32,
-    parameter   D_STAGE_BITWIDTH  = $clog2(32),
+    parameter   D_STAGE           = 16,
+    parameter   D_STAGE_BITWIDTH  = $clog2(16),
     parameter   S_BITWIDTH        = 11,
-    parameter   S_STAGE           = 32,
-    parameter   S_STAGE_BITWIDTH  = $clog2(32),
+    parameter   S_STAGE           = 16,
+    parameter   S_STAGE_BITWIDTH  = $clog2(16),
     parameter   SR_BITWIDTH       = 1
 ) (
     input   wire          clk,
@@ -115,7 +115,7 @@ module COMP_TOP #(
     reg           data_rd_sr;
     reg           size_rd_all;
 
-    BPC_ENGINE BE0
+    BPC_COMP BE0
     (
         .data_i           (data_i),
 	.valid_i          (valid_i),
@@ -187,7 +187,7 @@ module COMP_TOP #(
         .overflow_o       (bpc_fifo_s_over),
         .underflow_o      (bpc_fifo_s_under)
     );
-    ZRL_ENGINE ZE0
+    ZRL_COMP ZE0
     (
         .data_i           (data_i),
 	.valid_i          (valid_i),
@@ -259,7 +259,7 @@ module COMP_TOP #(
         .overflow_o       (zrl_fifo_s_over),
         .underflow_o      (zrl_fifo_s_under)
     );
-    SR_ENGINE SE0
+    SR_COMP SE0
     (
         .data_i           (data_i),
 	.valid_i          (valid_i),
@@ -372,10 +372,14 @@ module COMP_TOP #(
 		    if (zrl_fifo_s_out < 449) begin
 			zrl_flag = 1;
 		        zrl_cnt = zrl_fifo_s_out[8:6] + (| zrl_fifo_s_out[5:0]);
+		    end else begin
+			zrl_flag = 0;
 		    end
 		    if (bpc_fifo_s_out < 449) begin
 			bpc_flag = 1;
 			bpc_cnt = bpc_fifo_s_out[8:6] + (| bpc_fifo_s_out[5:0]);
+		    end else begin
+			bpc_flag = 0;
 		    end
 	        end else if (bcnt == 7) begin
 		    eop_out = 1;
