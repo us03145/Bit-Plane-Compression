@@ -1,0 +1,3554 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'DECOMP_TOP' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : DECOMP_TOP
+Version: Q-2019.12-SP5-5
+Date   : Wed Nov 10 19:23:57 2021
+****************************************
+
+
+  Startpoint: data_i[47] (input port clocked by clk)
+  Endpoint: data_o[31] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[47] (in)                      0.0000000000
+                                                  0.0000000000 f
+  U563/X (STP_ND2_6)                   0.0372360684
+                                                  0.0372360684 r
+  U462/X (STP_AOI21_8)                 0.0279928260
+                                                  0.0652288944 f
+  U658/X (STP_OR3B_1)                  0.0466841608
+                                                  0.1119130552 f
+  data_o[31] (out)                     0.0000000000
+                                                  0.1119130552 f
+  data arrival time                               0.1119130552
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1119130552
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0210039616
+
+
+  Startpoint: data_i[47] (input port clocked by clk)
+  Endpoint: data_o[30] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[47] (in)                      0.0000000000
+                                                  0.0000000000 f
+  U563/X (STP_ND2_6)                   0.0372360684
+                                                  0.0372360684 r
+  U462/X (STP_AOI21_8)                 0.0279928260
+                                                  0.0652288944 f
+  U510/X (STP_OR3B_1)                  0.0466841608
+                                                  0.1119130552 f
+  data_o[30] (out)                     0.0000000000
+                                                  0.1119130552 f
+  data arrival time                               0.1119130552
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1119130552
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0210039616
+
+
+  Startpoint: data_i[47] (input port clocked by clk)
+  Endpoint: data_o[29] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[47] (in)                      0.0000000000
+                                                  0.0000000000 f
+  U563/X (STP_ND2_6)                   0.0372360684
+                                                  0.0372360684 r
+  U462/X (STP_AOI21_8)                 0.0279928260
+                                                  0.0652288944 f
+  U659/X (STP_OR3B_1)                  0.0466841608
+                                                  0.1119130552 f
+  data_o[29] (out)                     0.0000000000
+                                                  0.1119130552 f
+  data arrival time                               0.1119130552
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1119130552
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0210039616
+
+
+  Startpoint: data_i[47] (input port clocked by clk)
+  Endpoint: data_o[28] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[47] (in)                      0.0000000000
+                                                  0.0000000000 f
+  U563/X (STP_ND2_6)                   0.0372360684
+                                                  0.0372360684 r
+  U462/X (STP_AOI21_8)                 0.0279928260
+                                                  0.0652288944 f
+  U656/X (STP_OR3B_1)                  0.0466841608
+                                                  0.1119130552 f
+  data_o[28] (out)                     0.0000000000
+                                                  0.1119130552 f
+  data arrival time                               0.1119130552
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1119130552
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0210039616
+
+
+  Startpoint: data_i[47] (input port clocked by clk)
+  Endpoint: data_o[27] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[47] (in)                      0.0000000000
+                                                  0.0000000000 f
+  U563/X (STP_ND2_6)                   0.0372360684
+                                                  0.0372360684 r
+  U462/X (STP_AOI21_8)                 0.0279928260
+                                                  0.0652288944 f
+  U660/X (STP_OR3B_1)                  0.0466841608
+                                                  0.1119130552 f
+  data_o[27] (out)                     0.0000000000
+                                                  0.1119130552 f
+  data arrival time                               0.1119130552
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1119130552
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0210039616
+
+
+  Startpoint: data_i[47] (input port clocked by clk)
+  Endpoint: data_o[26] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[47] (in)                      0.0000000000
+                                                  0.0000000000 f
+  U563/X (STP_ND2_6)                   0.0372360684
+                                                  0.0372360684 r
+  U462/X (STP_AOI21_8)                 0.0279928260
+                                                  0.0652288944 f
+  U657/X (STP_OR3B_1)                  0.0466841608
+                                                  0.1119130552 f
+  data_o[26] (out)                     0.0000000000
+                                                  0.1119130552 f
+  data arrival time                               0.1119130552
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1119130552
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0210039616
+
+
+  Startpoint: data_i[47] (input port clocked by clk)
+  Endpoint: data_o[25] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[47] (in)                      0.0000000000
+                                                  0.0000000000 f
+  U563/X (STP_ND2_6)                   0.0372360684
+                                                  0.0372360684 r
+  U462/X (STP_AOI21_8)                 0.0279928260
+                                                  0.0652288944 f
+  U661/X (STP_OR3B_1)                  0.0466841608
+                                                  0.1119130552 f
+  data_o[25] (out)                     0.0000000000
+                                                  0.1119130552 f
+  data arrival time                               0.1119130552
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1119130552
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0210039616
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[23] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 r
+  U669/X (STP_ND2_24)                  0.0472462587
+                                                  0.0472462587 f
+  U462/X (STP_AOI21_8)                 0.0338214822
+                                                  0.0810677409 r
+  U387/X (STP_NR2_1)                   0.0174038857
+                                                  0.0984716266 f
+  U1428/X (STP_AO21B_1)                0.0130869895
+                                                  0.1115586162 r
+  data_o[23] (out)                     0.0000000000
+                                                  0.1115586162 r
+  data arrival time                               0.1115586162
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1115586162
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0206495225
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[36] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 r
+  U562/X (STP_ND2_24)                  0.0423044451
+                                                  0.0423044451 f
+  U394/X (STP_OAOI211_1)               0.0354314856
+                                                  0.0777359307 r
+  U644/X (STP_NR2_G_0P8)               0.0219933763
+                                                  0.0997293070 f
+  U472/X (STP_ND2_0P5)                 0.0113930404
+                                                  0.1111223474 r
+  data_o[36] (out)                     0.0000000000
+                                                  0.1111223474 r
+  data arrival time                               0.1111223474
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1111223474
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0202132538
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[11] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 r
+  U669/X (STP_ND2_24)                  0.0472462587
+                                                  0.0472462587 f
+  U533/X (STP_AOI21_16)                0.0318347178
+                                                  0.0790809765 r
+  U532/X (STP_NR2_G_0P8)               0.0156506896
+                                                  0.0947316661 f
+  U1798/X (STP_OAI21_0P5)              0.0162941366
+                                                  0.1110258028 r
+  data_o[11] (out)                     0.0000000000
+                                                  0.1110258028 r
+  data arrival time                               0.1110258028
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1110258028
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0201167092
+
+
+  Startpoint: data_i[23] (input port clocked by clk)
+  Endpoint: data_o[44] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[23] (in)                      0.0000000000
+                                                  0.0000000000 f
+  U601/X (STP_ND2_6)                   0.0418458395
+                                                  0.0418458395 r
+  U430/X (STP_OAI21_3)                 0.0271812864
+                                                  0.0690271258 f
+  U522/X (STP_NR3_G_2)                 0.0290475488
+                                                  0.0980746746 r
+  U465/X (STP_INV_S_0P5)               0.0127602890
+                                                  0.1108349636 f
+  data_o[44] (out)                     0.0000000000
+                                                  0.1108349636 f
+  data arrival time                               0.1108349636
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1108349636
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0199258700
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[32] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 r
+  U459/X (STP_ND2_24)                  0.0422633626
+                                                  0.0422633626 f
+  U402/X (STP_AOI21_2)                 0.0356779508
+                                                  0.0779413134 r
+  U526/X (STP_AOI211_2)                0.0175096318
+                                                  0.0954509452 f
+  U536/X (STP_INV_S_1P25)              0.0152389184
+                                                  0.1106898636 r
+  data_o[32] (out)                     0.0000000000
+                                                  0.1106898636 r
+  data arrival time                               0.1106898636
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1106898636
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0197807699
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[4] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U577/X (STP_ND2_24)                  0.0341173038
+                                                  0.0341173038 r
+  U429/X (STP_OAI21_4)                 0.0208024532
+                                                  0.0549197569 f
+  U622/X (STP_AOI21_1)                 0.0275169238
+                                                  0.0824366808 r
+  U664/X (STP_OAI21_0P5)               0.0281801522
+                                                  0.1106168330 f
+  data_o[4] (out)                      0.0000000000
+                                                  0.1106168330 f
+  data arrival time                               0.1106168330
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1106168330
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0197077394
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U575/X (STP_ND2_24)                  0.0341173038
+                                                  0.0341173038 r
+  U428/X (STP_OAI21_4)                 0.0208024532
+                                                  0.0549197569 f
+  U619/X (STP_AOI21_1)                 0.0275169238
+                                                  0.0824366808 r
+  U663/X (STP_OAI21_0P5)               0.0281801522
+                                                  0.1106168330 f
+  data_o[2] (out)                      0.0000000000
+                                                  0.1106168330 f
+  data arrival time                               0.1106168330
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1106168330
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0197077394
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U573/X (STP_ND2_24)                  0.0341173038
+                                                  0.0341173038 r
+  U427/X (STP_OAI21_4)                 0.0208024532
+                                                  0.0549197569 f
+  U618/X (STP_AOI21_1)                 0.0275169238
+                                                  0.0824366808 r
+  U662/X (STP_OAI21_0P5)               0.0281801522
+                                                  0.1106168330 f
+  data_o[1] (out)                      0.0000000000
+                                                  0.1106168330 f
+  data arrival time                               0.1106168330
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1106168330
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0197077394
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[47] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U562/X (STP_ND2_24)                  0.0343475267
+                                                  0.0343475267 r
+  U552/X (STP_OAOI211_V2_1)            0.0251919106
+                                                  0.0595394373 f
+  U580/X (STP_OR3B_1)                  0.0509866402
+                                                  0.1105260774 f
+  data_o[47] (out)                     0.0000000000
+                                                  0.1105260774 f
+  data arrival time                               0.1105260774
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1105260774
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0196169838
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[43] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U562/X (STP_ND2_24)                  0.0343475267
+                                                  0.0343475267 r
+  U550/X (STP_OAOI211_V2_1)            0.0251919106
+                                                  0.0595394373 f
+  U582/X (STP_OR3B_1)                  0.0509866402
+                                                  0.1105260774 f
+  data_o[43] (out)                     0.0000000000
+                                                  0.1105260774 f
+  data arrival time                               0.1105260774
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1105260774
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0196169838
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[14] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 r
+  U669/X (STP_ND2_24)                  0.0472462587
+                                                  0.0472462587 f
+  U533/X (STP_AOI21_16)                0.0318347178
+                                                  0.0790809765 r
+  U461/X (STP_NR2_1)                   0.0158999264
+                                                  0.0949809030 f
+  U670/X (STP_OAI21_1)                 0.0155215338
+                                                  0.1105024368 r
+  data_o[14] (out)                     0.0000000000
+                                                  0.1105024368 r
+  data arrival time                               0.1105024368
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1105024368
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0195933431
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[9] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 r
+  U669/X (STP_ND2_24)                  0.0472462587
+                                                  0.0472462587 f
+  U533/X (STP_AOI21_16)                0.0318347178
+                                                  0.0790809765 r
+  U460/X (STP_NR2_1)                   0.0158999264
+                                                  0.0949809030 f
+  U671/X (STP_OAI21_1)                 0.0155215338
+                                                  0.1105024368 r
+  data_o[9] (out)                      0.0000000000
+                                                  0.1105024368 r
+  data arrival time                               0.1105024368
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1105024368
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0195933431
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[46] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U459/X (STP_ND2_24)                  0.0342718214
+                                                  0.0342718214 r
+  U553/X (STP_OAOI211_V2_1)            0.0251684114
+                                                  0.0594402328 f
+  U581/X (STP_OR3B_1)                  0.0509866402
+                                                  0.1104268730 f
+  data_o[46] (out)                     0.0000000000
+                                                  0.1104268730 f
+  data arrival time                               0.1104268730
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1104268730
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0195177794
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[38] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U511/X (STP_INV_S_20)                0.0307465643
+                                                  0.0307465643 r
+  U539/X (STP_NR2_S_16)                0.0221164227
+                                                  0.0528629869 f
+  U639/X (STP_BUF_S_12)                0.0290606022
+                                                  0.0819235891 f
+  U390/X (STP_ND2_G_3)                 0.0096418038
+                                                  0.0915653929 r
+  U470/X (STP_ND2_0P5)                 0.0187611058
+                                                  0.1103264987 f
+  data_o[38] (out)                     0.0000000000
+                                                  0.1103264987 f
+  data arrival time                               0.1103264987
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1103264987
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0194174051
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[40] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U562/X (STP_ND2_24)                  0.0343475267
+                                                  0.0343475267 r
+  U397/X (STP_OAOI211_V2_1)            0.0266721174
+                                                  0.0610196441 f
+  U1089/X (STP_INV_S_1)                0.0246658102
+                                                  0.0856854543 r
+  U570/X (STP_OAI211_1)                0.0245694593
+                                                  0.1102549136 f
+  data_o[40] (out)                     0.0000000000
+                                                  0.1102549136 f
+  data arrival time                               0.1102549136
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1102549136
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0193458200
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[21] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U562/X (STP_ND2_24)                  0.0343475267
+                                                  0.0343475267 r
+  U541/X (STP_OAOI211_V2_2)            0.0264769420
+                                                  0.0608244687 f
+  U431/X (STP_AOI211_1)                0.0339659080
+                                                  0.0947903767 r
+  U1387/X (STP_INV_S_0P5)              0.0154569075
+                                                  0.1102472842 f
+  data_o[21] (out)                     0.0000000000
+                                                  0.1102472842 f
+  data arrival time                               0.1102472842
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1102472842
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0193381906
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[19] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U562/X (STP_ND2_24)                  0.0343475267
+                                                  0.0343475267 r
+  U540/X (STP_OAOI211_V2_2)            0.0264769420
+                                                  0.0608244687 f
+  U432/X (STP_AOI211_1)                0.0339659080
+                                                  0.0947903767 r
+  U1383/X (STP_INV_S_0P5)              0.0154569075
+                                                  0.1102472842 f
+  data_o[19] (out)                     0.0000000000
+                                                  0.1102472842 f
+  data arrival time                               0.1102472842
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1102472842
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0193381906
+
+
+  Startpoint: data_i[63] (input port clocked by clk)
+  Endpoint: data_o[63] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[63] (in)                      0.0000000000
+                                                  0.0000000000 f
+  U647/X (STP_AOI211_8)                0.0481053665
+                                                  0.0481053665 r
+  U516/X (STP_OR3B_4)                  0.0387735069
+                                                  0.0868788734 r
+  U10325/X (STP_OAI211_0P5)            0.0233641192
+                                                  0.1102429926 f
+  data_o[63] (out)                     0.0000000000
+                                                  0.1102429926 f
+  data arrival time                               0.1102429926
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1102429926
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0193338990
+
+
+  Startpoint: data_i[63] (input port clocked by clk)
+  Endpoint: data_o[62] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[63] (in)                      0.0000000000
+                                                  0.0000000000 f
+  U647/X (STP_AOI211_8)                0.0481053665
+                                                  0.0481053665 r
+  U516/X (STP_OR3B_4)                  0.0387735069
+                                                  0.0868788734 r
+  U10328/X (STP_OAI211_0P5)            0.0233641192
+                                                  0.1102429926 f
+  data_o[62] (out)                     0.0000000000
+                                                  0.1102429926 f
+  data arrival time                               0.1102429926
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1102429926
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0193338990
+
+
+  Startpoint: data_i[63] (input port clocked by clk)
+  Endpoint: data_o[61] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[63] (in)                      0.0000000000
+                                                  0.0000000000 f
+  U647/X (STP_AOI211_8)                0.0481053665
+                                                  0.0481053665 r
+  U516/X (STP_OR3B_4)                  0.0387735069
+                                                  0.0868788734 r
+  U10331/X (STP_OAI211_0P5)            0.0233641192
+                                                  0.1102429926 f
+  data_o[61] (out)                     0.0000000000
+                                                  0.1102429926 f
+  data arrival time                               0.1102429926
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1102429926
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0193338990
+
+
+  Startpoint: data_i[63] (input port clocked by clk)
+  Endpoint: data_o[60] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[63] (in)                      0.0000000000
+                                                  0.0000000000 f
+  U647/X (STP_AOI211_8)                0.0481053665
+                                                  0.0481053665 r
+  U516/X (STP_OR3B_4)                  0.0387735069
+                                                  0.0868788734 r
+  U10367/X (STP_OAI211_0P5)            0.0233641192
+                                                  0.1102429926 f
+  data_o[60] (out)                     0.0000000000
+                                                  0.1102429926 f
+  data arrival time                               0.1102429926
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1102429926
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0193338990
+
+
+  Startpoint: data_i[63] (input port clocked by clk)
+  Endpoint: data_o[59] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[63] (in)                      0.0000000000
+                                                  0.0000000000 f
+  U647/X (STP_AOI211_8)                0.0481053665
+                                                  0.0481053665 r
+  U516/X (STP_OR3B_4)                  0.0387735069
+                                                  0.0868788734 r
+  U10370/X (STP_OAI211_0P5)            0.0233641192
+                                                  0.1102429926 f
+  data_o[59] (out)                     0.0000000000
+                                                  0.1102429926 f
+  data arrival time                               0.1102429926
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1102429926
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0193338990
+
+
+  Startpoint: data_i[63] (input port clocked by clk)
+  Endpoint: data_o[58] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[63] (in)                      0.0000000000
+                                                  0.0000000000 f
+  U647/X (STP_AOI211_8)                0.0481053665
+                                                  0.0481053665 r
+  U516/X (STP_OR3B_4)                  0.0387735069
+                                                  0.0868788734 r
+  U10373/X (STP_OAI211_0P5)            0.0233641192
+                                                  0.1102429926 f
+  data_o[58] (out)                     0.0000000000
+                                                  0.1102429926 f
+  data arrival time                               0.1102429926
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1102429926
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0193338990
+
+
+  Startpoint: data_i[63] (input port clocked by clk)
+  Endpoint: data_o[57] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[63] (in)                      0.0000000000
+                                                  0.0000000000 f
+  U647/X (STP_AOI211_8)                0.0481053665
+                                                  0.0481053665 r
+  U516/X (STP_OR3B_4)                  0.0387735069
+                                                  0.0868788734 r
+  U10376/X (STP_OAI211_0P5)            0.0233641192
+                                                  0.1102429926 f
+  data_o[57] (out)                     0.0000000000
+                                                  0.1102429926 f
+  data arrival time                               0.1102429926
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1102429926
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0193338990
+
+
+  Startpoint: data_i[63] (input port clocked by clk)
+  Endpoint: data_o[56] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[63] (in)                      0.0000000000
+                                                  0.0000000000 f
+  U647/X (STP_AOI211_8)                0.0481053665
+                                                  0.0481053665 r
+  U516/X (STP_OR3B_4)                  0.0387735069
+                                                  0.0868788734 r
+  U10379/X (STP_OAI211_0P5)            0.0233641192
+                                                  0.1102429926 f
+  data_o[56] (out)                     0.0000000000
+                                                  0.1102429926 f
+  data arrival time                               0.1102429926
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1102429926
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0193338990
+
+
+  Startpoint: data_i[63] (input port clocked by clk)
+  Endpoint: data_o[55] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[63] (in)                      0.0000000000
+                                                  0.0000000000 f
+  U647/X (STP_AOI211_8)                0.0481053665
+                                                  0.0481053665 r
+  U516/X (STP_OR3B_4)                  0.0387735069
+                                                  0.0868788734 r
+  U10382/X (STP_OAI211_0P5)            0.0233641192
+                                                  0.1102429926 f
+  data_o[55] (out)                     0.0000000000
+                                                  0.1102429926 f
+  data arrival time                               0.1102429926
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1102429926
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0193338990
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[37] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 r
+  U562/X (STP_ND2_24)                  0.0423044451
+                                                  0.0423044451 f
+  U389/X (STP_OAOI211_V2_1)            0.0329777263
+                                                  0.0752821714 r
+  U1380/X (STP_OR3B_2)                 0.0349320993
+                                                  0.1102142707 r
+  data_o[37] (out)                     0.0000000000
+                                                  0.1102142707 r
+  data arrival time                               0.1102142707
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1102142707
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0193051770
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[12] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 r
+  U565/X (STP_ND2_10)                  0.0419380218
+                                                  0.0419380218 f
+  U396/X (STP_INV_4)                   0.0222889632
+                                                  0.0642269850 r
+  U10356/X (STP_AOI22_0P75)            0.0265605748
+                                                  0.0907875597 f
+  U512/X (STP_OAI21_1)                 0.0190076679
+                                                  0.1097952276 r
+  data_o[12] (out)                     0.0000000000
+                                                  0.1097952276 r
+  data arrival time                               0.1097952276
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1097952276
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0188861340
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[8] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 r
+  U565/X (STP_ND2_10)                  0.0419380218
+                                                  0.0419380218 f
+  U396/X (STP_INV_4)                   0.0222889632
+                                                  0.0642269850 r
+  U10364/X (STP_AOI22_0P75)            0.0265605748
+                                                  0.0907875597 f
+  U513/X (STP_OAI21_1)                 0.0190076679
+                                                  0.1097952276 r
+  data_o[8] (out)                      0.0000000000
+                                                  0.1097952276 r
+  data arrival time                               0.1097952276
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1097952276
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0188861340
+
+
+  Startpoint: data_i[23] (input port clocked by clk)
+  Endpoint: data_o[42] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[23] (in)                      0.0000000000
+                                                  0.0000000000 f
+  U601/X (STP_ND2_6)                   0.0418458395
+                                                  0.0418458395 r
+  U588/X (STP_ND2_S_6)                 0.0227701999
+                                                  0.0646160394 f
+  U587/X (STP_ND2_S_6)                 0.0158849806
+                                                  0.0805010200 r
+  U633/X (STP_OAI211_1)                0.0292597786
+                                                  0.1097607985 f
+  data_o[42] (out)                     0.0000000000
+                                                  0.1097607985 f
+  data arrival time                               0.1097607985
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1097607985
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0188517049
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[34] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U511/X (STP_INV_S_20)                0.0307465643
+                                                  0.0307465643 r
+  U539/X (STP_NR2_S_16)                0.0221164227
+                                                  0.0528629869 f
+  U639/X (STP_BUF_S_12)                0.0290606022
+                                                  0.0819235891 f
+  U518/X (STP_ND2_G_4)                 0.0091885328
+                                                  0.0911121219 r
+  U474/X (STP_ND2_0P5)                 0.0185065791
+                                                  0.1096187010 f
+  data_o[34] (out)                     0.0000000000
+                                                  0.1096187010 f
+  data arrival time                               0.1096187010
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1096187010
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0187096074
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[33] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U511/X (STP_INV_S_20)                0.0307465643
+                                                  0.0307465643 r
+  U539/X (STP_NR2_S_16)                0.0221164227
+                                                  0.0528629869 f
+  U639/X (STP_BUF_S_12)                0.0290606022
+                                                  0.0819235891 f
+  U520/X (STP_ND2_G_4)                 0.0091885328
+                                                  0.0911121219 r
+  U475/X (STP_ND2_0P5)                 0.0185065791
+                                                  0.1096187010 f
+  data_o[33] (out)                     0.0000000000
+                                                  0.1096187010 f
+  data arrival time                               0.1096187010
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1096187010
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0187096074
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[22] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U511/X (STP_INV_S_20)                0.0307465643
+                                                  0.0307465643 r
+  U539/X (STP_NR2_S_16)                0.0221164227
+                                                  0.0528629869 f
+  U639/X (STP_BUF_S_12)                0.0290606022
+                                                  0.0819235891 f
+  U519/X (STP_ND2_G_4)                 0.0091885328
+                                                  0.0911121219 r
+  U468/X (STP_ND2_0P5)                 0.0185065791
+                                                  0.1096187010 f
+  data_o[22] (out)                     0.0000000000
+                                                  0.1096187010 f
+  data arrival time                               0.1096187010
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1096187010
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0187096074
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[6] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U579/X (STP_ND2_24)                  0.0335775726
+                                                  0.0335775726 r
+  U493/X (STP_OAI21_1P5)               0.0198955126
+                                                  0.0534730852 f
+  U624/X (STP_AOI21_1)                 0.0279184282
+                                                  0.0813915133 r
+  U666/X (STP_OAI21_0P5)               0.0281801522
+                                                  0.1095716655 f
+  data_o[6] (out)                      0.0000000000
+                                                  0.1095716655 f
+  data arrival time                               0.1095716655
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1095716655
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0186625719
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[13] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 r
+  U669/X (STP_ND2_24)                  0.0472462587
+                                                  0.0472462587 f
+  U533/X (STP_AOI21_16)                0.0318347178
+                                                  0.0790809765 r
+  U531/X (STP_NR2_G_0P8)               0.0149433613
+                                                  0.0940243378 f
+  U1794/X (STP_OAI21_0P5)              0.0153221041
+                                                  0.1093464419 r
+  data_o[13] (out)                     0.0000000000
+                                                  0.1093464419 r
+  data arrival time                               0.1093464419
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1093464419
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0184373483
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[10] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 r
+  U669/X (STP_ND2_24)                  0.0472462587
+                                                  0.0472462587 f
+  U533/X (STP_AOI21_16)                0.0318347178
+                                                  0.0790809765 r
+  U530/X (STP_NR2_G_0P8)               0.0149433613
+                                                  0.0940243378 f
+  U1802/X (STP_OAI21_0P5)              0.0153221041
+                                                  0.1093464419 r
+  data_o[10] (out)                     0.0000000000
+                                                  0.1093464419 r
+  data arrival time                               0.1093464419
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1093464419
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0184373483
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[7] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 r
+  U669/X (STP_ND2_24)                  0.0472462587
+                                                  0.0472462587 f
+  U533/X (STP_AOI21_16)                0.0318347178
+                                                  0.0790809765 r
+  U529/X (STP_NR2_G_0P8)               0.0149433613
+                                                  0.0940243378 f
+  U1806/X (STP_OAI21_0P5)              0.0153221041
+                                                  0.1093464419 r
+  data_o[7] (out)                      0.0000000000
+                                                  0.1093464419 r
+  data arrival time                               0.1093464419
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1093464419
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0184373483
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[5] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U578/X (STP_ND2_24)                  0.0335775726
+                                                  0.0335775726 r
+  U492/X (STP_OAI21_1P5)               0.0198955126
+                                                  0.0534730852 f
+  U623/X (STP_AOI21_1)                 0.0276618749
+                                                  0.0811349601 r
+  U665/X (STP_OAI21_0P5)               0.0281801522
+                                                  0.1093151122 f
+  data_o[5] (out)                      0.0000000000
+                                                  0.1093151122 f
+  data arrival time                               0.1093151122
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1093151122
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0184060186
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U571/X (STP_ND2_24)                  0.0335775726
+                                                  0.0335775726 r
+  U490/X (STP_OAI21_1P5)               0.0198955126
+                                                  0.0534730852 f
+  U621/X (STP_AOI21_1)                 0.0276618749
+                                                  0.0811349601 r
+  U620/X (STP_OAI21_0P5)               0.0281801522
+                                                  0.1093151122 f
+  data_o[3] (out)                      0.0000000000
+                                                  0.1093151122 f
+  data arrival time                               0.1093151122
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1093151122
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0184060186
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[20] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 r
+  U562/X (STP_ND2_24)                  0.0423044451
+                                                  0.0423044451 f
+  U542/X (STP_OAOI211_V2_1)            0.0327621959
+                                                  0.0750666410 r
+  U458/X (STP_INV_S_1)                 0.0219760835
+                                                  0.0970427245 f
+  U631/X (STP_OAI211_0P5)              0.0121515915
+                                                  0.1091943160 r
+  data_o[20] (out)                     0.0000000000
+                                                  0.1091943160 r
+  data arrival time                               0.1091943160
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1091943160
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0182852224
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[18] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 r
+  U562/X (STP_ND2_24)                  0.0423044451
+                                                  0.0423044451 f
+  U543/X (STP_OAOI211_V2_1)            0.0327621959
+                                                  0.0750666410 r
+  U457/X (STP_INV_S_1)                 0.0219760835
+                                                  0.0970427245 f
+  U630/X (STP_OAI211_0P5)              0.0121515915
+                                                  0.1091943160 r
+  data_o[18] (out)                     0.0000000000
+                                                  0.1091943160 r
+  data arrival time                               0.1091943160
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1091943160
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0182852224
+
+
+  Startpoint: data_i[23] (input port clocked by clk)
+  Endpoint: data_o[45] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  data_i[23] (in)                      0.0000000000
+                                                  0.0000000000 r
+  U601/X (STP_ND2_6)                   0.0542228036
+                                                  0.0542228036 f
+  U588/X (STP_ND2_S_6)                 0.0223466791
+                                                  0.0765694827 r
+  U587/X (STP_ND2_S_6)                 0.0164041370
+                                                  0.0929736197 f
+  U594/X (STP_ND2B_MM_0P5)             0.0161668733
+                                                  0.1091404930 r
+  data_o[45] (out)                     0.0000000000
+                                                  0.1091404930 r
+  data arrival time                               0.1091404930
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1091404930
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0182313994
+
+
+  Startpoint: data_i[23] (input port clocked by clk)
+  Endpoint: data_o[41] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  data_i[23] (in)                      0.0000000000
+                                                  0.0000000000 r
+  U601/X (STP_ND2_6)                   0.0542228036
+                                                  0.0542228036 f
+  U588/X (STP_ND2_S_6)                 0.0223466791
+                                                  0.0765694827 r
+  U587/X (STP_ND2_S_6)                 0.0164041370
+                                                  0.0929736197 f
+  U595/X (STP_ND2B_MM_0P5)             0.0161668733
+                                                  0.1091404930 r
+  data_o[41] (out)                     0.0000000000
+                                                  0.1091404930 r
+  data arrival time                               0.1091404930
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1091404930
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0182313994
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[15] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 r
+  U566/X (STP_ND3_6)                   0.0568583831
+                                                  0.0568583831 f
+  U464/X (STP_OAI21_1P5)               0.0238211825
+                                                  0.0806795657 r
+  U584/X (STP_ND2_S_1P5)               0.0148187131
+                                                  0.0954982787 f
+  U583/X (STP_ND2_0P5)                 0.0132435337
+                                                  0.1087418124 r
+  data_o[15] (out)                     0.0000000000
+                                                  0.1087418124 r
+  data arrival time                               0.1087418124
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1087418124
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0178327188
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[35] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U511/X (STP_INV_S_20)                0.0307465643
+                                                  0.0307465643 r
+  U539/X (STP_NR2_S_16)                0.0221164227
+                                                  0.0528629869 f
+  U639/X (STP_BUF_S_12)                0.0290606022
+                                                  0.0819235891 f
+  U442/X (STP_ND2_6)                   0.0085687116
+                                                  0.0904923007 r
+  U473/X (STP_ND2_0P5)                 0.0182401016
+                                                  0.1087324023 f
+  data_o[35] (out)                     0.0000000000
+                                                  0.1087324023 f
+  data arrival time                               0.1087324023
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1087324023
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0178233087
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[24] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 r
+  U669/X (STP_ND2_24)                  0.0472462587
+                                                  0.0472462587 f
+  U462/X (STP_AOI21_8)                 0.0338214822
+                                                  0.0810677409 r
+  U1389/X (STP_INV_S_1)                0.0162593648
+                                                  0.0973271057 f
+  U564/X (STP_OAI211_0P5)              0.0112311691
+                                                  0.1085582748 r
+  data_o[24] (out)                     0.0000000000
+                                                  0.1085582748 r
+  data arrival time                               0.1085582748
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1085582748
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0176491812
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[54] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U1923/X (STP_ND2_S_24)               0.0361834727
+                                                  0.0361834727 r
+  U497/X (STP_NR2B_V1DG_2)             0.0176842324
+                                                  0.0538677052 f
+  U10121/X (STP_INV_S_2)               0.0206893459
+                                                  0.0745570511 r
+  U10385/X (STP_OAI211_0P5)            0.0338553414
+                                                  0.1084123924 f
+  data_o[54] (out)                     0.0000000000
+                                                  0.1084123924 f
+  data arrival time                               0.1084123924
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1084123924
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0175032988
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[53] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U1923/X (STP_ND2_S_24)               0.0361834727
+                                                  0.0361834727 r
+  U497/X (STP_NR2B_V1DG_2)             0.0176842324
+                                                  0.0538677052 f
+  U10121/X (STP_INV_S_2)               0.0206893459
+                                                  0.0745570511 r
+  U10388/X (STP_OAI211_0P5)            0.0338553414
+                                                  0.1084123924 f
+  data_o[53] (out)                     0.0000000000
+                                                  0.1084123924 f
+  data arrival time                               0.1084123924
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1084123924
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0175032988
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[52] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U1923/X (STP_ND2_S_24)               0.0361834727
+                                                  0.0361834727 r
+  U497/X (STP_NR2B_V1DG_2)             0.0176842324
+                                                  0.0538677052 f
+  U10121/X (STP_INV_S_2)               0.0206893459
+                                                  0.0745570511 r
+  U10391/X (STP_OAI211_0P5)            0.0338553414
+                                                  0.1084123924 f
+  data_o[52] (out)                     0.0000000000
+                                                  0.1084123924 f
+  data arrival time                               0.1084123924
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1084123924
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0175032988
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[51] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U1923/X (STP_ND2_S_24)               0.0361834727
+                                                  0.0361834727 r
+  U497/X (STP_NR2B_V1DG_2)             0.0176842324
+                                                  0.0538677052 f
+  U10121/X (STP_INV_S_2)               0.0206893459
+                                                  0.0745570511 r
+  U10393/X (STP_OAI211_0P5)            0.0338553414
+                                                  0.1084123924 f
+  data_o[51] (out)                     0.0000000000
+                                                  0.1084123924 f
+  data arrival time                               0.1084123924
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1084123924
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0175032988
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[50] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U1923/X (STP_ND2_S_24)               0.0361834727
+                                                  0.0361834727 r
+  U497/X (STP_NR2B_V1DG_2)             0.0176842324
+                                                  0.0538677052 f
+  U10121/X (STP_INV_S_2)               0.0206893459
+                                                  0.0745570511 r
+  U10396/X (STP_OAI211_0P5)            0.0338553414
+                                                  0.1084123924 f
+  data_o[50] (out)                     0.0000000000
+                                                  0.1084123924 f
+  data arrival time                               0.1084123924
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1084123924
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0175032988
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[49] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  ready_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U1923/X (STP_ND2_S_24)               0.0361834727
+                                                  0.0361834727 r
+  U497/X (STP_NR2B_V1DG_2)             0.0176842324
+                                                  0.0538677052 f
+  U10121/X (STP_INV_S_2)               0.0206893459
+                                                  0.0745570511 r
+  U10398/X (STP_OAI211_0P5)            0.0338553414
+                                                  0.1084123924 f
+  data_o[49] (out)                     0.0000000000
+                                                  0.1084123924 f
+  data arrival time                               0.1084123924
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1084123924
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0175032988
+
+
+  Startpoint: data_i[23] (input port clocked by clk)
+  Endpoint: data_o[39] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  data_i[23] (in)                      0.0000000000
+                                                  0.0000000000 r
+  U601/X (STP_ND2_6)                   0.0542228036
+                                                  0.0542228036 f
+  U486/X (STP_ND2_G_1P5)               0.0214382745
+                                                  0.0756610781 r
+  U589/X (STP_AO2BB2_4)                0.0201495513
+                                                  0.0958106294 f
+  U1813/X (STP_AO21B_1)                0.0125688687
+                                                  0.1083794981 r
+  data_o[39] (out)                     0.0000000000
+                                                  0.1083794981 r
+  data arrival time                               0.1083794981
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1083794981
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0174704045
+
+
+  Startpoint: data_i[9] (input port clocked by clk)
+  Endpoint: data_o[17] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  data_i[9] (in)                       0.0000000000
+                                                  0.0000000000 f
+  U672/X (STP_ND3_4)                   0.0377555750
+                                                  0.0377555750 r
+  U1095/X (STP_AO21B_1)                0.0308397897
+                                                  0.0685953647 f
+  U1096/X (STP_INV_S_1)                0.0167988688
+                                                  0.0853942335 r
+  U628/X (STP_OAI211_0P5)              0.0223383605
+                                                  0.1077325940 f
+  data_o[17] (out)                     0.0000000000
+                                                  0.1077325940 f
+  data arrival time                               0.1077325940
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1077325940
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0168235004
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: ready_o (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+  ZRLE_DECOMP        ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.0000000000
+                                                                 0.0000000000
+  clock network delay (ideal)                         0.0000000000
+                                                                 0.0000000000
+  input external delay                                0.0000000000
+                                                                 0.0000000000 f
+  ready_i (in)                                        0.0000000000
+                                                                 0.0000000000 f
+  ZRL_DECOMP_ENGINE/U5/X (STP_OAI21_1P5)              0.0438374728
+                                                                 0.0438374728 r
+  ZRL_DECOMP_ENGINE/U4/X (STP_AOI21_1)                0.0329301059
+                                                                 0.0767675787 f
+  U471/X (STP_NR2B_1)                                 0.0299673676
+                                                                 0.1067349464 f
+  ready_o (out)                                       0.0000000000
+                                                                 0.1067349464 f
+  data arrival time                                              0.1067349464
+
+  clock clk (rise edge)                               0.0909090936
+                                                                 0.0909090936
+  clock network delay (ideal)                         0.0000000000
+                                                                 0.0909090936
+  output external delay                               0.0000000000
+                                                                 0.0909090936
+  data required time                                             0.0909090936
+  --------------------------------------------------------------------------
+  data required time                                             0.0909090936
+  data arrival time                                              -0.1067349464
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.0158258528
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[48] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U511/X (STP_INV_S_20)                0.0307465643
+                                                  0.0307465643 r
+  U539/X (STP_NR2_S_16)                0.0221164227
+                                                  0.0528629869 f
+  U10402/X (STP_ND2_G_1)               0.0180617273
+                                                  0.0709247142 r
+  U10404/X (STP_ND4_0P5)               0.0340647027
+                                                  0.1049894169 f
+  data_o[48] (out)                     0.0000000000
+                                                  0.1049894169 f
+  data arrival time                               0.1049894169
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1049894169
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0140803233
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: eop_o (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 r
+  U6981/X (STP_OR3B_8)                 0.0464945957
+                                                  0.0464945957 f
+  U7683/X (STP_NR2_S_3)                0.0178002045
+                                                  0.0642948002 r
+  U386/X (STP_AO222_1)                 0.0394302830
+                                                  0.1037250832 r
+  eop_o (out)                          0.0000000000
+                                                  0.1037250832 r
+  data arrival time                               0.1037250832
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1037250832
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0128159896
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: sop_o (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 r
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 r
+  U504/X (STP_ND2_12)                  0.0367796198
+                                                  0.0367796198 f
+  U10405/X (STP_NR4_1)                 0.0311729386
+                                                  0.0679525584 r
+  U614/X (STP_OR3B_0P5)                0.0337235108
+                                                  0.1016760692 r
+  sop_o (out)                          0.0000000000
+                                                  0.1016760692 r
+  data arrival time                               0.1016760692
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1016760692
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0107669756
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[16] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U511/X (STP_INV_S_20)                0.0307465643
+                                                  0.0307465643 r
+  U539/X (STP_NR2_S_16)                0.0221164227
+                                                  0.0528629869 f
+  U10419/X (STP_ND2_G_1)               0.0179871023
+                                                  0.0708500892 r
+  U10424/X (STP_ND4_0P5)               0.0299806893
+                                                  0.1008307785 f
+  data_o[16] (out)                     0.0000000000
+                                                  0.1008307785 f
+  data arrival time                               0.1008307785
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1008307785
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0099216849
+
+
+  Startpoint: valid_i (input port clocked by clk)
+  Endpoint: data_o[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchslogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                0.0000000000
+                                                  0.0000000000
+  clock network delay (ideal)          0.0000000000
+                                                  0.0000000000
+  input external delay                 0.0000000000
+                                                  0.0000000000 f
+  valid_i (in)                         0.0000000000
+                                                  0.0000000000 f
+  U511/X (STP_INV_S_20)                0.0307465643
+                                                  0.0307465643 r
+  U539/X (STP_NR2_S_16)                0.0221164227
+                                                  0.0528629869 f
+  U10409/X (STP_ND2_G_1)               0.0179871023
+                                                  0.0708500892 r
+  U10418/X (STP_ND4_0P5)               0.0299806893
+                                                  0.1008307785 f
+  data_o[0] (out)                      0.0000000000
+                                                  0.1008307785 f
+  data arrival time                               0.1008307785
+
+  clock clk (rise edge)                0.0909090936
+                                                  0.0909090936
+  clock network delay (ideal)          0.0000000000
+                                                  0.0909090936
+  output external delay                0.0000000000
+                                                  0.0909090936
+  data required time                              0.0909090936
+  -----------------------------------------------------------
+  data required time                              0.0909090936
+  data arrival time                               -0.1008307785
+  -----------------------------------------------------------
+  slack (VIOLATED)                                -0.0099216849
+
+
+    Net: data_o[0]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[1]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[2]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[3]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[4]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[5]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[6]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[7]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[8]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[9]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[10]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[11]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[12]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[13]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[14]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[15]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[16]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[17]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[18]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[19]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[20]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[21]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[22]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[23]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[24]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[25]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[26]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[27]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[28]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[29]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[30]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[31]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[32]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[33]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[34]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[35]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[36]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[37]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[38]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[39]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[40]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[41]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[42]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[43]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[44]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[45]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[46]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[47]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[48]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[49]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[50]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[51]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[52]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[53]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[54]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[55]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[56]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[57]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[58]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[59]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[60]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[61]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[62]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: data_o[63]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: eop_o
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: ready_o
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: sop_o
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Net: valid_o
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000693500
+  ------------------------------
+    Slack              -0.0000693500  (VIOLATED)
+
+
+    Design: DECOMP_TOP
+
+    max_area           0.0000000000
+  - Current Area       16372.9433593750
+  ------------------------------
+    Slack              -16372.9433593750  (VIOLATED)
+
+
+    Design: DECOMP_TOP
+
+    max_leakage_power      0.0000000000
+  - Current Leakage Power  306.5482177734
+  ----------------------------------
+    Slack                  -306.5482177734  (VIOLATED)
+
+
+1

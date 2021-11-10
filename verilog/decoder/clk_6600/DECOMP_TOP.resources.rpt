@@ -1,0 +1,122 @@
+ 
+****************************************
+Report : resources
+Design : DECOMP_TOP
+Version: Q-2019.12-SP5-5
+Date   : Wed Nov 10 19:23:57 2021
+****************************************
+
+
+Resource Report for this hierarchy in file /home/us03145/RTL/rtl/DECOMP_TOP.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| add_x_15       | DW01_inc       | width=4    | SR_DECOMP_ENGINE/add_87 (sr_decomp.v:87) |
+   |                |            | SR_DECOMP_ENGINE/add_99 (sr_decomp.v:99) |
+=============================================================================
+
+
+Resource Report for Ungrouped Hierarchy BPC_DECOMP_ENGINE in file
+        /home/us03145/RTL/rtl/bpc_decomp.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| lte_x_1        | DW_cmp         | width=5    | lte_67 (bpc_decomp.v:67)   |
+| lte_x_2        | DW_cmp         | width=7    | lte_68 (bpc_decomp.v:68)   |
+| sub_x_3        | DW01_sub       | width=8    | sub_85 (bpc_decomp.v:85)   |
+| ash_4          | DW_leftsh      | A_width=128 | sll_85 (bpc_decomp.v:85)  |
+|                |                | SH_width=32 |                           |
+| sub_x_5        | DW01_sub       | width=8    | sub_89 (bpc_decomp.v:89)   |
+| ash_6          | DW_leftsh      | A_width=128 | sll_89 (bpc_decomp.v:89)  |
+|                |                | SH_width=32 |                           |
+| add_x_7        | DW01_inc       | width=5    | add_93 (bpc_decomp.v:93)   |
+| add_x_8        | DW01_inc       | width=4    | add_110 (bpc_decomp.v:110) |
+| lte_x_9        | DW_cmp         | width=4    | lte_114 (bpc_decomp.v:114) |
+| add_x_10       | DW01_add       | width=4    | add_115 (bpc_decomp.v:115) |
+| lte_x_11       | DW_cmp         | width=4    | lte_119 (bpc_decomp.v:119) |
+| add_x_12       | DW01_add       | width=4    | add_120 (bpc_decomp.v:120) |
+| lte_x_13       | DW_cmp         | width=4    | lte_124 (bpc_decomp.v:124) |
+| add_x_14       | DW01_add       | width=4    | add_125 (bpc_decomp.v:125) |
+| add_x_15       | DW01_add       | width=16   | add_152 (bpc_decomp.v:152) |
+| add_x_16       | DW01_add       | width=16   | add_153 (bpc_decomp.v:153) |
+| add_x_17       | DW01_add       | width=16   | add_154 (bpc_decomp.v:154) |
+| add_x_18       | DW01_add       | width=16   | add_157 (bpc_decomp.v:157) |
+| add_x_19       | DW01_add       | width=16   | add_158 (bpc_decomp.v:158) |
+| add_x_20       | DW01_add       | width=16   | add_159_2 (bpc_decomp.v:159) |
+| add_x_21       | DW01_add       | width=16   | add_160_2 (bpc_decomp.v:160) |
+| lte_x_22       | DW_cmp         | width=4    | lte_165 (bpc_decomp.v:165) |
+| add_x_23       | DW01_inc       | width=4    | add_166 (bpc_decomp.v:166) |
+| lte_x_135      | DW_cmp         | width=4    | lte_109 (bpc_decomp.v:109) |
+|                |                |            | lte_134 (bpc_decomp.v:134) |
+| DP_OP_32J1_123_7218             |            |                            |
+|                | DP_OP_32J1_123_7218 |       |                            |
+| DP_OP_33J1_124_7218             |            |                            |
+|                | DP_OP_33J1_124_7218 |       |                            |
+=============================================================================
+
+Datapath Report for DP_OP_32J1_123_7218
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_32J1_123_7218  | add_86 (bpc_decomp.v:86)                            |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 7     |                                          |
+| O1    | PO   | Unsigned | 7     | I1 + $unsigned(6'b101110) (bpc_decomp.v:86) |
+==============================================================================
+
+Datapath Report for DP_OP_33J1_124_7218
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_33J1_124_7218  | add_90 (bpc_decomp.v:90)                            |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 7     |                                          |
+| O1    | PO   | Unsigned | 7     | I1 + $unsigned(7'b1000000) (bpc_decomp.v:90) |
+==============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_x_15           | DW01_inc         | apparch (area)     |                |
+| lte_x_1            | DW_cmp           | apparch (area)     |                |
+| lte_x_2            | DW_cmp           | apparch (area)     |                |
+| sub_x_3            | DW01_sub         | apparch (area)     |                |
+| ash_4              | DW_leftsh        | astr (area)        |                |
+| sub_x_5            | DW01_sub         | apparch (area)     |                |
+| ash_6              | DW_leftsh        | astr (area)        |                |
+| add_x_7            | DW01_inc         | apparch (area)     |                |
+| add_x_8            | DW01_inc         | apparch (area)     |                |
+| lte_x_9            | DW_cmp           | apparch (area)     |                |
+| add_x_10           | DW01_add         | apparch (area)     |                |
+| lte_x_11           | DW_cmp           | apparch (area)     |                |
+| add_x_12           | DW01_add         | apparch (area)     |                |
+| lte_x_13           | DW_cmp           | apparch (area)     |                |
+| add_x_14           | DW01_add         | apparch (area)     |                |
+| add_x_15           | DW01_add         | apparch (area)     |                |
+| add_x_16           | DW01_add         | apparch (area)     |                |
+| add_x_17           | DW01_add         | apparch (area)     |                |
+| add_x_18           | DW01_add         | apparch (area)     |                |
+| add_x_19           | DW01_add         | apparch (area)     |                |
+| add_x_20           | DW01_add         | apparch (area)     |                |
+| add_x_21           | DW01_add         | apparch (area)     |                |
+| lte_x_22           | DW_cmp           | apparch (area)     |                |
+| add_x_23           | DW01_inc         | apparch (area)     |                |
+| lte_x_135          | DW_cmp           | apparch (area)     |                |
+| DP_OP_32J1_123_7218                   |                    |                |
+|                    | DP_OP_32J1_123_7218 | str (area)      |                |
+===============================================================================
+
+1

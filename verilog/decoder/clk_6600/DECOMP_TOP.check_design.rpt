@@ -1,0 +1,15 @@
+ 
+****************************************
+check_design summary:
+Version:     Q-2019.12-SP5-5
+Date:        Wed Nov 10 19:23:56 2021
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      1
+    Unconnected ports (LINT-28)                                     1
+--------------------------------------------------------------------------------
+
+Warning: In design 'ZRLE_DECOMP', port 'eop_i' is not connected to any nets. (LINT-28)
+1
