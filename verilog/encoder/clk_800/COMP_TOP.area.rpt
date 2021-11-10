@@ -1,0 +1,57 @@
+ 
+****************************************
+Report : area
+Design : COMP_TOP
+Version: Q-2019.12-SP5-5
+Date   : Wed Nov 10 16:56:55 2021
+****************************************
+
+Library(s) Used:
+
+    um28nchhlogl35hsl140f_ssgwc0p81vn40c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ssgwc0p81vn40c.db)
+    um28nchslogl35hsl140f_ssgwc0p81vn40c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p81vn40c.db)
+    um28nchllogl35hsl140f_ssgwc0p81vn40c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p81vn40c.db)
+
+Number of ports:                         1709
+Number of nets:                         29561
+Number of cells:                        27888
+Number of combinational cells:          18723
+Number of sequential cells:              9155
+Number of macros/black boxes:               0
+Number of buf/inv:                       2534
+Number of references:                      71
+
+Combinational area:              14819.951861
+Buf/Inv area:                      892.415992
+Noncombinational area:           18058.823789
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 32878.775650
+Total area:                 undefined
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------------------------
+COMP_TOP                          32878.7757    100.0   2008.7760   2465.9040  0.0000  COMP_TOP
+BE0                               11430.5518     34.8   4608.0719   6277.8239  0.0000  BPC_ENGINE
+BE0/DE0                             272.3280      0.8    272.3280      0.0000  0.0000  DBX_ENC_1
+BE0/DE1                             272.3280      0.8    272.3280      0.0000  0.0000  DBX_ENC_0
+BEBUF                              4015.5359     12.2   2528.2319   1487.3040  0.0000  BPC_CODEBUF
+FIFO_BPC_D                         4318.4400     13.1     22.3440     28.8960  0.0000  FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_2
+FIFO_BPC_D/MA0                     4267.2000     13.0   1686.7200   2580.4800  0.0000  MEMORY_ARRAY_BITWIDTH64_STAGE16_2
+FIFO_SR_D                          4321.8000     13.1     22.3440     28.7280  0.0000  FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_0
+FIFO_SR_D/MA0                      4270.7280     13.0   1690.2480   2580.4800  0.0000  MEMORY_ARRAY_BITWIDTH64_STAGE16_0
+FIFO_ZRL_D                         4317.7680     13.1     22.3440     28.7280  0.0000  FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_1
+FIFO_ZRL_D/MA0                     4266.6960     13.0   1686.2160   2580.4800  0.0000  MEMORY_ARRAY_BITWIDTH64_STAGE16_1
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------------------------
+Total                                                  14819.9519  18058.8238  0.0000
+
+1

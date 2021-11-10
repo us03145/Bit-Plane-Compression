@@ -1,0 +1,266 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : COMP_TOP
+Version: Q-2019.12-SP5-5
+Date   : Wed Nov 10 15:47:00 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: SSGWC0P81VN40C   Library: um28nchhlogl35hsl140f_ssgwc0p81vn40c
+Wire Load Model Mode: enclosed
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: sop_o (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  COMP_TOP           ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  ready_i (in)                             0.00       0.00 f
+  U2627/X (STR_INV_18)                     0.02       0.02 r
+  U2621/X (STR_NR3_G_1P5)                  0.01       0.03 f
+  sop_o (out)                              0.00       0.03 f
+  data arrival time                                   0.03
+
+  clock clk (rise edge)                    0.03       0.03
+  clock network delay (ideal)              0.00       0.03
+  output external delay                    0.00       0.03
+  data required time                                  0.03
+  -----------------------------------------------------------
+  data required time                                  0.03
+  data arrival time                                  -0.03
+  -----------------------------------------------------------
+  slack (VIOLATED: increase significant digits)       0.00
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: sop_o (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  COMP_TOP           ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  ready_i (in)                             0.00       0.00 r
+  U2627/X (STR_INV_18)                     0.01       0.01 f
+  U2621/X (STR_NR3_G_1P5)                  0.02       0.03 r
+  sop_o (out)                              0.00       0.03 r
+  data arrival time                                   0.03
+
+  clock clk (rise edge)                    0.03       0.03
+  clock network delay (ideal)              0.00       0.03
+  output external delay                    0.00       0.03
+  data required time                                  0.03
+  -----------------------------------------------------------
+  data required time                                  0.03
+  data arrival time                                  -0.03
+  -----------------------------------------------------------
+  slack (VIOLATED: increase significant digits)       0.00
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: valid_o (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  COMP_TOP           ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  ready_i (in)                             0.00       0.00 f
+  U2625/X (STR_INV_18)                     0.02       0.02 r
+  U2623/X (STR_NR2_1P5)                    0.01       0.03 f
+  valid_o (out)                            0.00       0.03 f
+  data arrival time                                   0.03
+
+  clock clk (rise edge)                    0.03       0.03
+  clock network delay (ideal)              0.00       0.03
+  output external delay                    0.00       0.03
+  data required time                                  0.03
+  -----------------------------------------------------------
+  data required time                                  0.03
+  data arrival time                                  -0.03
+  -----------------------------------------------------------
+  slack (VIOLATED: increase significant digits)       0.00
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: eop_o (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  COMP_TOP           ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  ready_i (in)                             0.00       0.00 f
+  U2624/X (STR_INV_18)                     0.02       0.02 r
+  U2622/X (STR_NR2_1P5)                    0.01       0.03 f
+  eop_o (out)                              0.00       0.03 f
+  data arrival time                                   0.03
+
+  clock clk (rise edge)                    0.03       0.03
+  clock network delay (ideal)              0.00       0.03
+  output external delay                    0.00       0.03
+  data required time                                  0.03
+  -----------------------------------------------------------
+  data required time                                  0.03
+  data arrival time                                  -0.03
+  -----------------------------------------------------------
+  slack (VIOLATED: increase significant digits)       0.00
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: ready_o (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  COMP_TOP           ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  ready_i (in)                             0.00       0.00 f
+  U2626/X (STR_INV_18)                     0.02       0.02 r
+  U2587/X (STR_NR2_1P5)                    0.01       0.02 f
+  ready_o (out)                            0.00       0.02 f
+  data arrival time                                   0.02
+
+  clock clk (rise edge)                    0.03       0.03
+  clock network delay (ideal)              0.00       0.03
+  output external delay                    0.00       0.03
+  data required time                                  0.03
+  -----------------------------------------------------------
+  data required time                                  0.03
+  data arrival time                                  -0.02
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: valid_o (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  COMP_TOP           ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  ready_i (in)                             0.00       0.00 r
+  U2625/X (STR_INV_18)                     0.01       0.01 f
+  U2623/X (STR_NR2_1P5)                    0.01       0.02 r
+  valid_o (out)                            0.00       0.02 r
+  data arrival time                                   0.02
+
+  clock clk (rise edge)                    0.03       0.03
+  clock network delay (ideal)              0.00       0.03
+  output external delay                    0.00       0.03
+  data required time                                  0.03
+  -----------------------------------------------------------
+  data required time                                  0.03
+  data arrival time                                  -0.02
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: eop_o (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  COMP_TOP           ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  ready_i (in)                             0.00       0.00 r
+  U2624/X (STR_INV_18)                     0.01       0.01 f
+  U2622/X (STR_NR2_1P5)                    0.01       0.02 r
+  eop_o (out)                              0.00       0.02 r
+  data arrival time                                   0.02
+
+  clock clk (rise edge)                    0.03       0.03
+  clock network delay (ideal)              0.00       0.03
+  output external delay                    0.00       0.03
+  data required time                                  0.03
+  -----------------------------------------------------------
+  data required time                                  0.03
+  data arrival time                                  -0.02
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: ready_o (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  COMP_TOP           ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  ready_i (in)                             0.00       0.00 r
+  U2626/X (STR_INV_18)                     0.01       0.01 f
+  U2587/X (STR_NR2_1P5)                    0.01       0.02 r
+  ready_o (out)                            0.00       0.02 r
+  data arrival time                                   0.02
+
+  clock clk (rise edge)                    0.03       0.03
+  clock network delay (ideal)              0.00       0.03
+  output external delay                    0.00       0.03
+  data required time                                  0.03
+  -----------------------------------------------------------
+  data required time                                  0.03
+  data arrival time                                  -0.02
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

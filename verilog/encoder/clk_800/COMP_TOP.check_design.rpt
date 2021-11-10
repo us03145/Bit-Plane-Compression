@@ -1,0 +1,57 @@
+ 
+****************************************
+check_design summary:
+Version:     Q-2019.12-SP5-5
+Date:        Wed Nov 10 16:56:53 2021
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     33
+    Unconnected ports (LINT-28)                                    32
+    Feedthrough (LINT-29)                                           1
+
+Cells                                                               3
+    Nets connected to multiple pins on same cell (LINT-33)          3
+--------------------------------------------------------------------------------
+
+Warning: In design 'BPC_ENGINE', port 'sop_o' is not connected to any nets. (LINT-28)
+Warning: In design 'BPC_ENGINE', port 'ready_o' is not connected to any nets. (LINT-28)
+Warning: In design 'BPC_CODEBUF', port 'sop_i' is not connected to any nets. (LINT-28)
+Warning: In design 'BPC_CODEBUF', port 'size_o[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'BPC_CODEBUF', port 'sop_o' is not connected to any nets. (LINT-28)
+Warning: In design 'BPC_CODEBUF', port 'eop_o' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_2', port 'empty_o' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_2', port 'threshold_o' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_2', port 'overflow_o' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_2', port 'underflow_o' is not connected to any nets. (LINT-28)
+Warning: In design 'DBX_ENC_1', port 'codeword_o[63]' is not connected to any nets. (LINT-28)
+Warning: In design 'DBX_ENC_1', port 'size_o[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'DBX_ENC_1', port 'size_o[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'DBX_ENC_1', port 'size_o[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'MEMORY_ARRAY_BITWIDTH64_STAGE16_2', port 'wptr_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'MEMORY_ARRAY_BITWIDTH64_STAGE16_2', port 'rptr_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_0', port 'empty_o' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_0', port 'threshold_o' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_0', port 'overflow_o' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_0', port 'underflow_o' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_1', port 'empty_o' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_1', port 'threshold_o' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_1', port 'overflow_o' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_1', port 'underflow_o' is not connected to any nets. (LINT-28)
+Warning: In design 'MEMORY_ARRAY_BITWIDTH64_STAGE16_0', port 'wptr_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'MEMORY_ARRAY_BITWIDTH64_STAGE16_0', port 'rptr_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'MEMORY_ARRAY_BITWIDTH64_STAGE16_1', port 'wptr_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'MEMORY_ARRAY_BITWIDTH64_STAGE16_1', port 'rptr_i[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'DBX_ENC_0', port 'size_o[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'DBX_ENC_0', port 'size_o[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'DBX_ENC_0', port 'size_o[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'DBX_ENC_0', port 'size_o[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'BPC_CODEBUF', input port 'ready_i' is connected directly to output port 'ready_o'. (LINT-29)
+Warning: In design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_2', the same net is connected to more than one pin on submodule 'MA0'. (LINT-33)
+   Net 'RP0/*Logic0*' is connected to pins 'wptr_i[4]', 'rptr_i[4]''.
+Warning: In design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_0', the same net is connected to more than one pin on submodule 'MA0'. (LINT-33)
+   Net 'RP0/*Logic0*' is connected to pins 'wptr_i[4]', 'rptr_i[4]''.
+Warning: In design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_1', the same net is connected to more than one pin on submodule 'MA0'. (LINT-33)
+   Net 'RP0/*Logic0*' is connected to pins 'wptr_i[4]', 'rptr_i[4]''.
+1

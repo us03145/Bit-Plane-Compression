@@ -1,0 +1,1238 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version Q-2019.12-SP5-5 for linux64 - Mar 21, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+# ---------------------------------------
+# DESIGN PROFILE
+# ---------------------------------------
+set topmodule_name      COMP_TOP
+COMP_TOP
+set clk_port_name       clk
+clk
+set clk_freq            $env(clk_freq)
+24000
+# ---------------------------------------
+# Read Libraries
+# ---------------------------------------
+set LIBLIST_PATH        $env(LIBLIST_PATH)
+/home/urimi1204/RTL/syn/..//syn/lib/lib_container.tcl
+source $LIBLIST_PATH
+/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/symbol/um28nchhlogl35hsl140f.sdb /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/symbol/um28nchllogl35hsl140f.sdb /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/symbol/um28nchslogl35hsl140f.sdb /media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/symbol/um28nchulogl35hsl140f.sdb /media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/symbol/um28nchvlogl35hsl140f.sdb
+# ---------------------------------------
+# Read Source Codes
+# ---------------------------------------
+set RTL_PATH            $env(RTL_PATH)
+/home/urimi1204/RTL/syn/..//rtl/
+read_file $RTL_PATH -autoread -recursive -format verilog -top $topmodule_name
+== READ_FILE autoread for top design 'COMP_TOP' ==
+
+Starting READ_FILE autoread mode...
+Information: Adding '/home/urimi1204/RTL/rtl/'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/home/urimi1204/RTL/rtl/'. (AUTOREAD-105)
+Information: Adding '/home/urimi1204/RTL/rtl/COMP_TOP.v'.  (AUTOREAD-100)
+Information: Adding '/home/urimi1204/RTL/rtl/FIFO.v'.  (AUTOREAD-100)
+Information: Adding '/home/urimi1204/RTL/rtl/bpc_codebuf.v'.  (AUTOREAD-100)
+Information: Adding '/home/urimi1204/RTL/rtl/sr_engine.v'.  (AUTOREAD-100)
+Information: Adding '/home/urimi1204/RTL/rtl/zrle_engine.v'.  (AUTOREAD-100)
+Information: Adding '/home/urimi1204/RTL/rtl/zrle_codebuf.v'.  (AUTOREAD-100)
+Information: Adding '/home/urimi1204/RTL/rtl/bpc_engine.v'.  (AUTOREAD-100)
+Information: Source filelist.f ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Source COMP.tar.gz ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Scanning file { COMP_TOP.v }. (AUTOREAD-303)
+Information: Scanning file { FIFO.v }. (AUTOREAD-303)
+Information: Scanning file { bpc_codebuf.v }. (AUTOREAD-303)
+Information: Scanning file { sr_engine.v }. (AUTOREAD-303)
+Information: Scanning file { zrle_engine.v }. (AUTOREAD-303)
+Information: Scanning file { zrle_codebuf.v }. (AUTOREAD-303)
+Information: Scanning file { bpc_engine.v }. (AUTOREAD-303)
+Compiling source file /home/urimi1204/RTL/rtl/bpc_engine.v
+Presto compilation completed successfully.
+Compiling source file /home/urimi1204/RTL/rtl/zrle_codebuf.v
+Presto compilation completed successfully.
+Compiling source file /home/urimi1204/RTL/rtl/bpc_codebuf.v
+Presto compilation completed successfully.
+Compiling source file /home/urimi1204/RTL/rtl/zrle_engine.v
+Presto compilation completed successfully.
+Compiling source file /home/urimi1204/RTL/rtl/FIFO.v
+Presto compilation completed successfully.
+Compiling source file /home/urimi1204/RTL/rtl/sr_engine.v
+Presto compilation completed successfully.
+Compiling source file /home/urimi1204/RTL/rtl/COMP_TOP.v
+Presto compilation completed successfully.
+Elaborating top design COMP_TOP
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ffbc0p99v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ffbc0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ffbc0p99vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ffg0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ffbc0p99v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ffbc0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ffbc0p99vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ffg0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ffbc0p99v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ffbc0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ffbc0p99vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ffg0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ffbc0p99v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ffbc0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ffbc0p99vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ffg0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ffbc0p99v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ffbc0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ffbc0p99vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ffg0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_tt0p9v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_tt0p9v25c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_tt0p9v85c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_tt0p9v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_tt0p9v25c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_tt0p9v85c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_tt0p9v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_tt0p9v25c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_tt0p9v85c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_tt0p9v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_tt0p9v25c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_tt0p9v85c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_tt0p9v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_tt0p9v25c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_tt0p9v85c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ssgwc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ssgwc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ssgwc0p81vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_sswc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_sswc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_sswc0p81vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p81vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_sswc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_sswc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_sswc0p81vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p81vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_sswc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_sswc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_sswc0p81vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ssgwc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ssgwc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ssgwc0p81vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_sswc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_sswc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_sswc0p81vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ssgwc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ssgwc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ssgwc0p81vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_sswc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_sswc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_sswc0p81vn40c.db'
+Loading db file '/usr/synopsys/syn/Q-2019.12-SP5-5/libraries/syn/gtech.db'
+Loading db file '/usr/synopsys/syn/Q-2019.12-SP5-5/libraries/syn/standard.sldb'
+  Loading link library 'um28nchhlogl35hsl140f_ffbc0p99v0c'
+  Loading link library 'um28nchhlogl35hsl140f_ffbc0p99v125c'
+  Loading link library 'um28nchhlogl35hsl140f_ffbc0p99vn40c'
+  Loading link library 'um28nchhlogl35hsl140f_ffg0p99v125c'
+  Loading link library 'um28nchllogl35hsl140f_ffbc0p99v0c'
+  Loading link library 'um28nchllogl35hsl140f_ffbc0p99v125c'
+  Loading link library 'um28nchllogl35hsl140f_ffbc0p99vn40c'
+  Loading link library 'um28nchllogl35hsl140f_ffg0p99v125c'
+  Loading link library 'um28nchslogl35hsl140f_ffbc0p99v0c'
+  Loading link library 'um28nchslogl35hsl140f_ffbc0p99v125c'
+  Loading link library 'um28nchslogl35hsl140f_ffbc0p99vn40c'
+  Loading link library 'um28nchslogl35hsl140f_ffg0p99v125c'
+  Loading link library 'um28nchulogl35hsl140f_ffbc0p99v0c'
+  Loading link library 'um28nchulogl35hsl140f_ffbc0p99v125c'
+  Loading link library 'um28nchulogl35hsl140f_ffbc0p99vn40c'
+  Loading link library 'um28nchulogl35hsl140f_ffg0p99v125c'
+  Loading link library 'um28nchvlogl35hsl140f_ffbc0p99v0c'
+  Loading link library 'um28nchvlogl35hsl140f_ffbc0p99v125c'
+  Loading link library 'um28nchvlogl35hsl140f_ffbc0p99vn40c'
+  Loading link library 'um28nchvlogl35hsl140f_ffg0p99v125c'
+  Loading link library 'um28nchhlogl35hsl140f_tt0p9v125c'
+  Loading link library 'um28nchhlogl35hsl140f_tt0p9v25c'
+  Loading link library 'um28nchhlogl35hsl140f_tt0p9v85c'
+  Loading link library 'um28nchllogl35hsl140f_tt0p9v125c'
+  Loading link library 'um28nchllogl35hsl140f_tt0p9v25c'
+  Loading link library 'um28nchllogl35hsl140f_tt0p9v85c'
+  Loading link library 'um28nchslogl35hsl140f_tt0p9v125c'
+  Loading link library 'um28nchslogl35hsl140f_tt0p9v25c'
+  Loading link library 'um28nchslogl35hsl140f_tt0p9v85c'
+  Loading link library 'um28nchulogl35hsl140f_tt0p9v125c'
+  Loading link library 'um28nchulogl35hsl140f_tt0p9v25c'
+  Loading link library 'um28nchulogl35hsl140f_tt0p9v85c'
+  Loading link library 'um28nchvlogl35hsl140f_tt0p9v125c'
+  Loading link library 'um28nchvlogl35hsl140f_tt0p9v25c'
+  Loading link library 'um28nchvlogl35hsl140f_tt0p9v85c'
+  Loading link library 'um28nchhlogl35hsl140f_ssgwc0p81v0c'
+  Loading link library 'um28nchhlogl35hsl140f_ssgwc0p81v125c'
+  Loading link library 'um28nchhlogl35hsl140f_ssgwc0p81vn40c'
+  Loading link library 'um28nchhlogl35hsl140f_sswc0p81v0c'
+  Loading link library 'um28nchhlogl35hsl140f_sswc0p81v125c'
+  Loading link library 'um28nchhlogl35hsl140f_sswc0p81vn40c'
+  Loading link library 'um28nchllogl35hsl140f_ssgwc0p81v0c'
+  Loading link library 'um28nchllogl35hsl140f_ssgwc0p81v125c'
+  Loading link library 'um28nchllogl35hsl140f_ssgwc0p81vn40c'
+  Loading link library 'um28nchllogl35hsl140f_sswc0p81v0c'
+  Loading link library 'um28nchllogl35hsl140f_sswc0p81v125c'
+  Loading link library 'um28nchllogl35hsl140f_sswc0p81vn40c'
+  Loading link library 'um28nchslogl35hsl140f_ssgwc0p81v0c'
+  Loading link library 'um28nchslogl35hsl140f_ssgwc0p81v125c'
+  Loading link library 'um28nchslogl35hsl140f_ssgwc0p81vn40c'
+  Loading link library 'um28nchslogl35hsl140f_sswc0p81v0c'
+  Loading link library 'um28nchslogl35hsl140f_sswc0p81v125c'
+  Loading link library 'um28nchslogl35hsl140f_sswc0p81vn40c'
+  Loading link library 'um28nchulogl35hsl140f_ssgwc0p81v0c'
+  Loading link library 'um28nchulogl35hsl140f_ssgwc0p81v125c'
+  Loading link library 'um28nchulogl35hsl140f_ssgwc0p81vn40c'
+  Loading link library 'um28nchulogl35hsl140f_sswc0p81v0c'
+  Loading link library 'um28nchulogl35hsl140f_sswc0p81v125c'
+  Loading link library 'um28nchulogl35hsl140f_sswc0p81vn40c'
+  Loading link library 'um28nchvlogl35hsl140f_ssgwc0p81v0c'
+  Loading link library 'um28nchvlogl35hsl140f_ssgwc0p81v125c'
+  Loading link library 'um28nchvlogl35hsl140f_ssgwc0p81vn40c'
+  Loading link library 'um28nchvlogl35hsl140f_sswc0p81v0c'
+  Loading link library 'um28nchvlogl35hsl140f_sswc0p81v125c'
+  Loading link library 'um28nchvlogl35hsl140f_sswc0p81vn40c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine COMP_TOP line 351 in file
+		'/home/urimi1204/RTL/rtl/COMP_TOP.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      bcnt_reg       | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine COMP_TOP line 359 in file
+		'/home/urimi1204/RTL/rtl/COMP_TOP.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|     zrl_cnt_reg     | Latch |   3   |  Y  | N  | N  | N  | -  | -  | -  |
+|     bpc_cnt_reg     | Latch |   3   |  Y  | N  | N  | N  | -  | -  | -  |
+|    zrl_flag_reg     | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|    bpc_flag_reg     | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|    pad_flag_reg     | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully. (COMP_TOP)
+Elaborated 1 design.
+Current design is now 'COMP_TOP'.
+Information: Building the design 'BPC_ENGINE'. (HDL-193)
+
+Statistics for case statements in always block at line 109 in file
+	'/home/urimi1204/RTL/rtl/bpc_engine.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           141            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine BPC_ENGINE line 81 in file
+		'/home/urimi1204/RTL/rtl/bpc_engine.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|     mid_buf_reg     | Latch | 1008  |  Y  | N  | N  | N  | -  | -  | -  |
+|      delta_reg      | Latch | 1008  |  Y  | N  | N  | N  | -  | -  | -  |
+|  baseword_buf_reg   | Latch |  16   |  Y  | N  | N  | N  | -  | -  | -  |
+|   baseword_1_reg    | Latch |  16   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+
+Inferred memory devices in process
+	in routine BPC_ENGINE line 109 in file
+		'/home/urimi1204/RTL/rtl/bpc_engine.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|       dbp_reg       | Latch | 1008  |  Y  | N  | N  | N  | -  | -  | -  |
+|   data_out_n_reg    | Latch |  146  |  Y  | N  | N  | N  | -  | -  | -  |
+|   baseword_2_reg    | Latch |  16   |  Y  | N  | N  | N  | -  | -  | -  |
+|    de_flag_2_reg    | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|   de_input_2_reg    | Latch |  63   |  Y  | N  | N  | N  | -  | -  | -  |
+|   de_input_1_reg    | Latch |  63   |  Y  | N  | N  | N  | -  | -  | -  |
+|   size_out_n_reg    | Latch |   8   |  Y  | N  | N  | N  | -  | -  | -  |
+|    de_flag_1_reg    | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|       dbx_reg       | Latch | 1008  |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+
+Inferred memory devices in process
+	in routine BPC_ENGINE line 223 in file
+		'/home/urimi1204/RTL/rtl/bpc_engine.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    valid_out_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     stage_2_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     bcnt_1_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    valid_mid_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     bcnt_2_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     len_cnt_reg     | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    send_cnt_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    data_out_reg     | Flip-flop |  146  |  Y  | N  | Y  | N  | N  | N  | N  |
+|    size_out_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     sop_out_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     eop_out_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|  BPC_ENGINE/134  |   16   |   126   |      4       |
+======================================================
+Presto compilation completed successfully. (BPC_ENGINE)
+Information: Building the design 'BPC_CODEBUF'. (HDL-193)
+
+Inferred memory devices in process
+	in routine BPC_CODEBUF line 35 in file
+		'/home/urimi1204/RTL/rtl/bpc_codebuf.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      flush_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    send_cnt_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    data_out_reg     | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    size_out_reg     | Flip-flop |  11   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    code_buf_reg     | Flip-flop |  384  |  Y  | N  | Y  | N  | N  | N  | N  |
+|    buf_size_reg     | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   total_size_reg    | Flip-flop |  11   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   data_valid_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   size_valid_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine BPC_CODEBUF line 65 in file
+		'/home/urimi1204/RTL/rtl/bpc_codebuf.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|   size_out_n_reg    | Latch |  11   |  Y  | N  | N  | N  | -  | -  | -  |
+|   data_out_n_reg    | Latch |  64   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully. (BPC_CODEBUF)
+Information: Building the design 'FIFO' instantiated from design 'COMP_TOP' with
+	the parameters "BITWIDTH=64,STAGE=16,STAGE_BITWIDTH=4". (HDL-193)
+Presto compilation completed successfully. (FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4)
+Information: Building the design 'FIFO' instantiated from design 'COMP_TOP' with
+	the parameters "BITWIDTH=11,STAGE=16,STAGE_BITWIDTH=4". (HDL-193)
+Presto compilation completed successfully. (FIFO_BITWIDTH11_STAGE16_STAGE_BITWIDTH4)
+Information: Building the design 'ZRL_ENGINE'. (HDL-193)
+
+Statistics for case statements in always block at line 37 in file
+	'/home/urimi1204/RTL/rtl/zrle_engine.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            41            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine ZRL_ENGINE line 37 in file
+		'/home/urimi1204/RTL/rtl/zrle_engine.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|     data_n_reg      | Latch |  68   |  Y  | N  | N  | N  | -  | -  | -  |
+|     size_n_reg      | Latch |   7   |  Y  | N  | N  | N  | -  | -  | -  |
+|      sop_n_reg      | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+|      eop_n_reg      | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+
+Inferred memory devices in process
+	in routine ZRL_ENGINE line 213 in file
+		'/home/urimi1204/RTL/rtl/zrle_engine.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       eop_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    valid_out_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      data_reg       | Flip-flop |  68   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      size_reg       | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       sop_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (ZRL_ENGINE)
+Information: Building the design 'ZRL_CODEBUF'. (HDL-193)
+
+Inferred memory devices in process
+	in routine ZRL_CODEBUF line 35 in file
+		'/home/urimi1204/RTL/rtl/zrle_codebuf.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      bcnt_reg       | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    data_out_reg     | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    size_out_reg     | Flip-flop |  11   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    code_buf_reg     | Flip-flop |  144  |  Y  | N  | Y  | N  | N  | N  | N  |
+|    buf_size_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   total_size_reg    | Flip-flop |  11   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   data_valid_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   size_valid_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine ZRL_CODEBUF line 65 in file
+		'/home/urimi1204/RTL/rtl/zrle_codebuf.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|   data_out_n_reg    | Latch |  64   |  Y  | N  | N  | N  | -  | -  | -  |
+|   size_out_n_reg    | Latch |  11   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully. (ZRL_CODEBUF)
+Information: Building the design 'SR_ENGINE'. (HDL-193)
+
+Inferred memory devices in process
+	in routine SR_ENGINE line 40 in file
+		'/home/urimi1204/RTL/rtl/sr_engine.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|   data_out_n_reg    | Latch |  64   |  Y  | N  | N  | N  | -  | -  | -  |
+|   flag_out_n_reg    | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+
+Inferred memory devices in process
+	in routine SR_ENGINE line 72 in file
+		'/home/urimi1204/RTL/rtl/sr_engine.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   d_valid_out_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   s_valid_out_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      data_reg       | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      flag_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      bcnt_reg       | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    data_out_reg     | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    flag_out_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (SR_ENGINE)
+Information: Building the design 'FIFO' instantiated from design 'COMP_TOP' with
+	the parameters "BITWIDTH=1,STAGE=16,STAGE_BITWIDTH=4". (HDL-193)
+Presto compilation completed successfully. (FIFO_BITWIDTH1_STAGE16_STAGE_BITWIDTH4)
+Information: Building the design 'DBX_ENC'. (HDL-193)
+
+Statistics for case statements in always block at line 281 in file
+	'/home/urimi1204/RTL/rtl/bpc_engine.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           302            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (DBX_ENC)
+Information: Building the design 'WRITE_POINTER' instantiated from design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4' with
+	the parameters "STAGE=16". (HDL-193)
+
+Inferred memory devices in process
+	in routine WRITE_POINTER_STAGE16 line 100 in file
+		'/home/urimi1204/RTL/rtl/FIFO.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     wptr_o_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (WRITE_POINTER_STAGE16)
+Information: Building the design 'READ_POINTER' instantiated from design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4' with
+	the parameters "STAGE=16". (HDL-193)
+
+Inferred memory devices in process
+	in routine READ_POINTER_STAGE16 line 125 in file
+		'/home/urimi1204/RTL/rtl/FIFO.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     rptr_o_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (READ_POINTER_STAGE16)
+Information: Building the design 'MEMORY_ARRAY' instantiated from design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4' with
+	the parameters "BITWIDTH=64,STAGE=16". (HDL-193)
+
+Inferred memory devices in process
+	in routine MEMORY_ARRAY_BITWIDTH64_STAGE16 line 151 in file
+		'/home/urimi1204/RTL/rtl/FIFO.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   data_memory_reg   | Flip-flop | 1024  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+=========================================================================
+|          block name/line            | Inputs | Outputs | # sel inputs |
+=========================================================================
+| MEMORY_ARRAY_BITWIDTH64_STAGE16/157 |   16   |   64    |      4       |
+=========================================================================
+Presto compilation completed successfully. (MEMORY_ARRAY_BITWIDTH64_STAGE16)
+Information: Building the design 'STATUS_SIGNAL' instantiated from design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4' with
+	the parameters "STAGE=16". (HDL-193)
+Warning:  /home/urimi1204/RTL/rtl/FIFO.v:185: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/urimi1204/RTL/rtl/FIFO.v:194: signed to unsigned assignment occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine STATUS_SIGNAL_STAGE16 line 198 in file
+		'/home/urimi1204/RTL/rtl/FIFO.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| fifo_overflow_o_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine STATUS_SIGNAL_STAGE16 line 210 in file
+		'/home/urimi1204/RTL/rtl/FIFO.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| fifo_underflow_o_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+Presto compilation completed successfully. (STATUS_SIGNAL_STAGE16)
+Information: Building the design 'MEMORY_ARRAY' instantiated from design 'FIFO_BITWIDTH11_STAGE16_STAGE_BITWIDTH4' with
+	the parameters "BITWIDTH=11,STAGE=16". (HDL-193)
+
+Inferred memory devices in process
+	in routine MEMORY_ARRAY_BITWIDTH11_STAGE16 line 151 in file
+		'/home/urimi1204/RTL/rtl/FIFO.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   data_memory_reg   | Flip-flop |  176  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+=========================================================================
+|          block name/line            | Inputs | Outputs | # sel inputs |
+=========================================================================
+| MEMORY_ARRAY_BITWIDTH11_STAGE16/157 |   16   |   11    |      4       |
+=========================================================================
+Presto compilation completed successfully. (MEMORY_ARRAY_BITWIDTH11_STAGE16)
+Information: Building the design 'MEMORY_ARRAY' instantiated from design 'FIFO_BITWIDTH1_STAGE16_STAGE_BITWIDTH4' with
+	the parameters "BITWIDTH=1,STAGE=16". (HDL-193)
+
+Inferred memory devices in process
+	in routine MEMORY_ARRAY_BITWIDTH1_STAGE16 line 151 in file
+		'/home/urimi1204/RTL/rtl/FIFO.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   data_memory_reg   | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+========================================================================
+|          block name/line           | Inputs | Outputs | # sel inputs |
+========================================================================
+| MEMORY_ARRAY_BITWIDTH1_STAGE16/157 |   16   |    1    |      4       |
+========================================================================
+Presto compilation completed successfully. (MEMORY_ARRAY_BITWIDTH1_STAGE16)
+Autoread command completed successfully.
+# ---------------------------------------
+# 1. Environments Setting
+# ---------------------------------------
+link
+
+  Linking design 'COMP_TOP'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (16 designs)              /home/urimi1204/RTL/syn/clk_24000/COMP_TOP.db, etc
+  um28nchhlogl35hsl140f_ffbc0p99v0c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ffbc0p99v0c.db
+  um28nchhlogl35hsl140f_ffbc0p99v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ffbc0p99v125c.db
+  um28nchhlogl35hsl140f_ffbc0p99vn40c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ffbc0p99vn40c.db
+  um28nchhlogl35hsl140f_ffg0p99v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ffg0p99v125c.db
+  um28nchllogl35hsl140f_ffbc0p99v0c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ffbc0p99v0c.db
+  um28nchllogl35hsl140f_ffbc0p99v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ffbc0p99v125c.db
+  um28nchllogl35hsl140f_ffbc0p99vn40c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ffbc0p99vn40c.db
+  um28nchllogl35hsl140f_ffg0p99v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ffg0p99v125c.db
+  um28nchslogl35hsl140f_ffbc0p99v0c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ffbc0p99v0c.db
+  um28nchslogl35hsl140f_ffbc0p99v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ffbc0p99v125c.db
+  um28nchslogl35hsl140f_ffbc0p99vn40c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ffbc0p99vn40c.db
+  um28nchslogl35hsl140f_ffg0p99v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ffg0p99v125c.db
+  um28nchulogl35hsl140f_ffbc0p99v0c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ffbc0p99v0c.db
+  um28nchulogl35hsl140f_ffbc0p99v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ffbc0p99v125c.db
+  um28nchulogl35hsl140f_ffbc0p99vn40c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ffbc0p99vn40c.db
+  um28nchulogl35hsl140f_ffg0p99v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ffg0p99v125c.db
+  um28nchvlogl35hsl140f_ffbc0p99v0c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ffbc0p99v0c.db
+  um28nchvlogl35hsl140f_ffbc0p99v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ffbc0p99v125c.db
+  um28nchvlogl35hsl140f_ffbc0p99vn40c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ffbc0p99vn40c.db
+  um28nchvlogl35hsl140f_ffg0p99v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ffg0p99v125c.db
+  um28nchhlogl35hsl140f_tt0p9v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_tt0p9v125c.db
+  um28nchhlogl35hsl140f_tt0p9v25c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_tt0p9v25c.db
+  um28nchhlogl35hsl140f_tt0p9v85c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_tt0p9v85c.db
+  um28nchllogl35hsl140f_tt0p9v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_tt0p9v125c.db
+  um28nchllogl35hsl140f_tt0p9v25c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_tt0p9v25c.db
+  um28nchllogl35hsl140f_tt0p9v85c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_tt0p9v85c.db
+  um28nchslogl35hsl140f_tt0p9v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_tt0p9v125c.db
+  um28nchslogl35hsl140f_tt0p9v25c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_tt0p9v25c.db
+  um28nchslogl35hsl140f_tt0p9v85c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_tt0p9v85c.db
+  um28nchulogl35hsl140f_tt0p9v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_tt0p9v125c.db
+  um28nchulogl35hsl140f_tt0p9v25c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_tt0p9v25c.db
+  um28nchulogl35hsl140f_tt0p9v85c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_tt0p9v85c.db
+  um28nchvlogl35hsl140f_tt0p9v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_tt0p9v125c.db
+  um28nchvlogl35hsl140f_tt0p9v25c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_tt0p9v25c.db
+  um28nchvlogl35hsl140f_tt0p9v85c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_tt0p9v85c.db
+  um28nchhlogl35hsl140f_ssgwc0p81v0c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ssgwc0p81v0c.db
+  um28nchhlogl35hsl140f_ssgwc0p81v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ssgwc0p81v125c.db
+  um28nchhlogl35hsl140f_ssgwc0p81vn40c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ssgwc0p81vn40c.db
+  um28nchhlogl35hsl140f_sswc0p81v0c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_sswc0p81v0c.db
+  um28nchhlogl35hsl140f_sswc0p81v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_sswc0p81v125c.db
+  um28nchhlogl35hsl140f_sswc0p81vn40c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_sswc0p81vn40c.db
+  um28nchllogl35hsl140f_ssgwc0p81v0c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p81v0c.db
+  um28nchllogl35hsl140f_ssgwc0p81v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p81v125c.db
+  um28nchllogl35hsl140f_ssgwc0p81vn40c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p81vn40c.db
+  um28nchllogl35hsl140f_sswc0p81v0c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_sswc0p81v0c.db
+  um28nchllogl35hsl140f_sswc0p81v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_sswc0p81v125c.db
+  um28nchllogl35hsl140f_sswc0p81vn40c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_sswc0p81vn40c.db
+  um28nchslogl35hsl140f_ssgwc0p81v0c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p81v0c.db
+  um28nchslogl35hsl140f_ssgwc0p81v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p81v125c.db
+  um28nchslogl35hsl140f_ssgwc0p81vn40c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p81vn40c.db
+  um28nchslogl35hsl140f_sswc0p81v0c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_sswc0p81v0c.db
+  um28nchslogl35hsl140f_sswc0p81v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_sswc0p81v125c.db
+  um28nchslogl35hsl140f_sswc0p81vn40c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_sswc0p81vn40c.db
+  um28nchulogl35hsl140f_ssgwc0p81v0c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ssgwc0p81v0c.db
+  um28nchulogl35hsl140f_ssgwc0p81v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ssgwc0p81v125c.db
+  um28nchulogl35hsl140f_ssgwc0p81vn40c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ssgwc0p81vn40c.db
+  um28nchulogl35hsl140f_sswc0p81v0c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_sswc0p81v0c.db
+  um28nchulogl35hsl140f_sswc0p81v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_sswc0p81v125c.db
+  um28nchulogl35hsl140f_sswc0p81vn40c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_sswc0p81vn40c.db
+  um28nchvlogl35hsl140f_ssgwc0p81v0c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ssgwc0p81v0c.db
+  um28nchvlogl35hsl140f_ssgwc0p81v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ssgwc0p81v125c.db
+  um28nchvlogl35hsl140f_ssgwc0p81vn40c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ssgwc0p81vn40c.db
+  um28nchvlogl35hsl140f_sswc0p81v0c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_sswc0p81v0c.db
+  um28nchvlogl35hsl140f_sswc0p81v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_sswc0p81v125c.db
+  um28nchvlogl35hsl140f_sswc0p81vn40c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_sswc0p81vn40c.db
+
+1
+uniquify
+Information: Uniquified 3 instances of design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4'. (OPT-1056)
+Information: Uniquified 2 instances of design 'FIFO_BITWIDTH11_STAGE16_STAGE_BITWIDTH4'. (OPT-1056)
+Information: Uniquified 2 instances of design 'DBX_ENC'. (OPT-1056)
+Information: Uniquified 6 instances of design 'WRITE_POINTER_STAGE16'. (OPT-1056)
+Information: Uniquified 6 instances of design 'READ_POINTER_STAGE16'. (OPT-1056)
+Information: Uniquified 3 instances of design 'MEMORY_ARRAY_BITWIDTH64_STAGE16'. (OPT-1056)
+Information: Uniquified 6 instances of design 'STATUS_SIGNAL_STAGE16'. (OPT-1056)
+Information: Uniquified 2 instances of design 'MEMORY_ARRAY_BITWIDTH11_STAGE16'. (OPT-1056)
+1
+# ---------------------------------------
+# 2. Constraints Setting
+# ---------------------------------------
+# Clock
+# Reduce clock period to model wire delay (60% of original period)
+set delay_percentage 0.6
+0.6
+set clk_period [expr 1000 / double($clk_freq)]
+0.0416666666667
+set clk_period [expr $clk_period * $delay_percentage]
+0.025
+if {[sizeof_collection [get_ports $clk_port_name]] > 0} {
+  # Create real clock if clock port is found
+  set clk_name $clk_port_name
+  create_clock -period $clk_period -name $clk_name
+  # If real clock, set infinite drive strength
+  set_drive 0 $clk_name
+} elseif {[sizeof_collection [get_ports $clk_port_name]] == 0} {
+  # Create virtual clock if clock port is not found
+  set clk_name vclk
+  create_clock -period $clk_period -name $clk_name
+}
+Warning: Creating virtual clock named 'clk' with no sources. (UID-348)
+1
+# Apply default timing constraints for modules
+set_input_delay  [expr 2/3 * $clk_period] [all_inputs] -clock $clk_name
+1
+set_output_delay [expr 2/3 * $clk_period] [all_outputs] -clock $clk_name
+1
+# Transition time of a slope that drives the port,
+# such that a higher transition value means longer delays
+# This prevents the hold time violations that we don't have to care about
+set_input_transition 0.1 [all_inputs]
+1
+# Area
+# If max_area is set 0, DesignCompiler will minimize the design as small as possible
+set_max_area 0 
+1
+# ---------------------------------------
+# 3. Compilation
+# ---------------------------------------
+compile_ultra
+Loading db file '/usr/synopsys/syn/Q-2019.12-SP5-5/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ssgwc0p81vn40c.db"
+Analyzing: "/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_sswc0p81vn40c.db"
+Analyzing: "/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p81vn40c.db"
+Analyzing: "/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_sswc0p81vn40c.db"
+Analyzing: "/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p81vn40c.db"
+Analyzing: "/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_sswc0p81vn40c.db"
+Analyzing: "/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ssgwc0p81vn40c.db"
+Analyzing: "/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_sswc0p81vn40c.db"
+Analyzing: "/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ssgwc0p81vn40c.db"
+Analyzing: "/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_sswc0p81vn40c.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | Q-2019.12-DWBB_201912.5 |     *     |
+| Licensed DW Building Blocks        | Q-2019.12-DWBB_201912.5 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 89 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'COMP_TOP'
+Information: The register 'FIFO_BPC_S/SS0/fifo_underflow_o_reg' will be removed. (OPT-1207)
+Information: The register 'FIFO_BPC_S/SS0/fifo_overflow_o_reg' will be removed. (OPT-1207)
+Information: The register 'FIFO_ZRL_D/SS0/fifo_underflow_o_reg' will be removed. (OPT-1207)
+Information: The register 'FIFO_ZRL_D/SS0/fifo_overflow_o_reg' will be removed. (OPT-1207)
+Information: The register 'FIFO_ZRL_S/SS0/fifo_underflow_o_reg' will be removed. (OPT-1207)
+Information: The register 'FIFO_ZRL_S/SS0/fifo_overflow_o_reg' will be removed. (OPT-1207)
+Information: The register 'FIFO_SR_D/SS0/fifo_underflow_o_reg' will be removed. (OPT-1207)
+Information: The register 'FIFO_SR_D/SS0/fifo_overflow_o_reg' will be removed. (OPT-1207)
+Information: The register 'FIFO_SR_S/SS0/fifo_underflow_o_reg' will be removed. (OPT-1207)
+Information: The register 'FIFO_SR_S/SS0/fifo_overflow_o_reg' will be removed. (OPT-1207)
+Information: The register 'FIFO_BPC_D/SS0/fifo_underflow_o_reg' will be removed. (OPT-1207)
+Information: The register 'FIFO_BPC_D/SS0/fifo_overflow_o_reg' will be removed. (OPT-1207)
+Information: The register 'ZE0/sop_reg' will be removed. (OPT-1207)
+Information: The register 'ZE0/sop_n_reg' will be removed. (OPT-1207)
+Information: The register 'BE0/sop_out_reg' will be removed. (OPT-1207)
+
+  Loading target library 'um28nchhlogl35hsl140f_sswc0p81vn40c'
+  Loading target library 'um28nchllogl35hsl140f_sswc0p81vn40c'
+  Loading target library 'um28nchslogl35hsl140f_sswc0p81vn40c'
+  Loading target library 'um28nchulogl35hsl140f_sswc0p81vn40c'
+  Loading target library 'um28nchvlogl35hsl140f_sswc0p81vn40c'
+Loaded alib file './alib-52/um28nchhlogl35hsl140f_ssgwc0p81vn40c.db.alib'
+Loaded alib file './alib-52/um28nchhlogl35hsl140f_sswc0p81vn40c.db.alib'
+Loaded alib file './alib-52/um28nchllogl35hsl140f_ssgwc0p81vn40c.db.alib' (placeholder)
+Loaded alib file './alib-52/um28nchllogl35hsl140f_sswc0p81vn40c.db.alib' (placeholder)
+Loaded alib file './alib-52/um28nchslogl35hsl140f_ssgwc0p81vn40c.db.alib' (placeholder)
+Loaded alib file './alib-52/um28nchslogl35hsl140f_sswc0p81vn40c.db.alib' (placeholder)
+Loaded alib file './alib-52/um28nchulogl35hsl140f_ssgwc0p81vn40c.db.alib' (placeholder)
+Loaded alib file './alib-52/um28nchulogl35hsl140f_sswc0p81vn40c.db.alib' (placeholder)
+Loaded alib file './alib-52/um28nchvlogl35hsl140f_ssgwc0p81vn40c.db.alib' (placeholder)
+Loaded alib file './alib-52/um28nchvlogl35hsl140f_sswc0p81vn40c.db.alib' (placeholder)
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy FIFO_BPC_S before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy ZE0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy ZEBUF before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy SE0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_SR_S before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_ZRL_S before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_BPC_D/WP0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_BPC_D/RP0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_BPC_D/SS0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_BPC_S/MA0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_SR_S/MA0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_SR_S/WP0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_SR_D/WP0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_ZRL_S/WP0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_ZRL_D/WP0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_BPC_S/WP0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_SR_S/RP0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_SR_D/RP0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_ZRL_S/RP0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_ZRL_D/RP0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_BPC_S/RP0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_SR_S/SS0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_SR_D/SS0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_ZRL_S/SS0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_ZRL_D/SS0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_BPC_S/SS0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy FIFO_ZRL_S/MA0 before Pass 1 (OPT-776)
+Information: Ungrouping 27 of 38 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'BPC_ENGINE'
+Information: Added key list 'DesignWare' to design 'BPC_ENGINE'. (DDB-72)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][0]' is removed because it is merged to 'dbx_reg[0][0]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][1]' is removed because it is merged to 'dbx_reg[0][1]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][2]' is removed because it is merged to 'dbx_reg[0][2]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][3]' is removed because it is merged to 'dbx_reg[0][3]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][4]' is removed because it is merged to 'dbx_reg[0][4]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][5]' is removed because it is merged to 'dbx_reg[0][5]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][6]' is removed because it is merged to 'dbx_reg[0][6]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][7]' is removed because it is merged to 'dbx_reg[0][7]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][8]' is removed because it is merged to 'dbx_reg[0][8]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][9]' is removed because it is merged to 'dbx_reg[0][9]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][10]' is removed because it is merged to 'dbx_reg[0][10]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][11]' is removed because it is merged to 'dbx_reg[0][11]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][12]' is removed because it is merged to 'dbx_reg[0][12]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][13]' is removed because it is merged to 'dbx_reg[0][13]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][14]' is removed because it is merged to 'dbx_reg[0][14]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][15]' is removed because it is merged to 'dbx_reg[0][15]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][16]' is removed because it is merged to 'dbx_reg[0][16]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][17]' is removed because it is merged to 'dbx_reg[0][17]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][18]' is removed because it is merged to 'dbx_reg[0][18]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][19]' is removed because it is merged to 'dbx_reg[0][19]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][20]' is removed because it is merged to 'dbx_reg[0][20]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][21]' is removed because it is merged to 'dbx_reg[0][21]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][22]' is removed because it is merged to 'dbx_reg[0][22]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][23]' is removed because it is merged to 'dbx_reg[0][23]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][24]' is removed because it is merged to 'dbx_reg[0][24]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][25]' is removed because it is merged to 'dbx_reg[0][25]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][26]' is removed because it is merged to 'dbx_reg[0][26]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][27]' is removed because it is merged to 'dbx_reg[0][27]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][28]' is removed because it is merged to 'dbx_reg[0][28]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][29]' is removed because it is merged to 'dbx_reg[0][29]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][30]' is removed because it is merged to 'dbx_reg[0][30]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][31]' is removed because it is merged to 'dbx_reg[0][31]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][32]' is removed because it is merged to 'dbx_reg[0][32]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][33]' is removed because it is merged to 'dbx_reg[0][33]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][34]' is removed because it is merged to 'dbx_reg[0][34]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][35]' is removed because it is merged to 'dbx_reg[0][35]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][36]' is removed because it is merged to 'dbx_reg[0][36]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][37]' is removed because it is merged to 'dbx_reg[0][37]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][38]' is removed because it is merged to 'dbx_reg[0][38]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][39]' is removed because it is merged to 'dbx_reg[0][39]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][40]' is removed because it is merged to 'dbx_reg[0][40]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][41]' is removed because it is merged to 'dbx_reg[0][41]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][42]' is removed because it is merged to 'dbx_reg[0][42]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][43]' is removed because it is merged to 'dbx_reg[0][43]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][44]' is removed because it is merged to 'dbx_reg[0][44]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][45]' is removed because it is merged to 'dbx_reg[0][45]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][46]' is removed because it is merged to 'dbx_reg[0][46]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][47]' is removed because it is merged to 'dbx_reg[0][47]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][48]' is removed because it is merged to 'dbx_reg[0][48]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][49]' is removed because it is merged to 'dbx_reg[0][49]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][50]' is removed because it is merged to 'dbx_reg[0][50]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][51]' is removed because it is merged to 'dbx_reg[0][51]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][52]' is removed because it is merged to 'dbx_reg[0][52]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][53]' is removed because it is merged to 'dbx_reg[0][53]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][54]' is removed because it is merged to 'dbx_reg[0][54]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][55]' is removed because it is merged to 'dbx_reg[0][55]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][56]' is removed because it is merged to 'dbx_reg[0][56]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][57]' is removed because it is merged to 'dbx_reg[0][57]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][58]' is removed because it is merged to 'dbx_reg[0][58]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][59]' is removed because it is merged to 'dbx_reg[0][59]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][60]' is removed because it is merged to 'dbx_reg[0][60]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][61]' is removed because it is merged to 'dbx_reg[0][61]'. (OPT-1215)
+Information: In design 'BPC_ENGINE', the register 'dbp_reg[0][62]' is removed because it is merged to 'dbx_reg[0][62]'. (OPT-1215)
+ Implement Synthetic for 'BPC_ENGINE'.
+  Processing 'COMP_TOP'
+Information: Added key list 'DesignWare' to design 'COMP_TOP'. (DDB-72)
+ Implement Synthetic for 'COMP_TOP'.
+  Processing 'BPC_CODEBUF'
+Information: Added key list 'DesignWare' to design 'BPC_CODEBUF'. (DDB-72)
+ Implement Synthetic for 'BPC_CODEBUF'.
+  Processing 'MEMORY_ARRAY_BITWIDTH64_STAGE16_0'
+  Processing 'DBX_ENC_0'
+  Processing 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_0'
+Information: Added key list 'DesignWare' to design 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_0'. (DDB-72)
+ Implement Synthetic for 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_0'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'STM_TIE1_1' in the library 'um28nchhlogl35hsl140f_ssgwc0p81vn40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'STM_TIE0_1' in the library 'um28nchhlogl35hsl140f_ssgwc0p81vn40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'STQ_TIE1_1' in the library 'um28nchllogl35hsl140f_ssgwc0p81vn40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'STQ_TIE0_1' in the library 'um28nchllogl35hsl140f_ssgwc0p81vn40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'STP_TIE1_1' in the library 'um28nchslogl35hsl140f_ssgwc0p81vn40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'STP_TIE0_1' in the library 'um28nchslogl35hsl140f_ssgwc0p81vn40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'STC_TIE1_1' in the library 'um28nchulogl35hsl140f_ssgwc0p81vn40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'STC_TIE0_1' in the library 'um28nchulogl35hsl140f_ssgwc0p81vn40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'STR_TIE1_1' in the library 'um28nchvlogl35hsl140f_ssgwc0p81vn40c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'STR_TIE0_1' in the library 'um28nchvlogl35hsl140f_ssgwc0p81vn40c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: The register 'BE0/bcnt_2_reg[3]' is a constant and will be removed. (OPT-1206)
+
+Threshold voltage group cell usage:
+>> HVT35 100.00%, LVT35 0.00%, SVT35 0.00%, UHVT35 0.00%, ULVT35 0.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Ungrouping hierarchy FIFO_SR_D 'FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_0' #insts = 42. (OPT-777)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+Information: The register 'BEBUF/total_size_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'ZEBUF/code_buf_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'ZEBUF/code_buf_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'ZEBUF/code_buf_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'ZEBUF/code_buf_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'ZEBUF/code_buf_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'ZEBUF/code_buf_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'ZEBUF/code_buf_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'ZEBUF/code_buf_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'ZEBUF/code_buf_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'ZEBUF/code_buf_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'ZEBUF/code_buf_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'ZEBUF/code_buf_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'ZEBUF/code_buf_reg[12]' is a constant and will be removed. (OPT-1206)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:04:58   61108.3      0.06       0.2       0.1                            747.2449
+    0:04:59   60927.4      0.06       0.2       3.1                            745.4451
+
+Threshold voltage group cell usage:
+>> HVT35 100.00%, LVT35 0.00%, SVT35 0.00%, UHVT35 0.00%, ULVT35 0.00%
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:05:02   60972.9      0.06       0.2       0.1                            746.2047
+    0:05:04   60972.9      0.06       0.2       0.1                            746.2047
+
+Threshold voltage group cell usage:
+>> HVT35 100.00%, LVT35 0.00%, SVT35 0.00%, UHVT35 0.00%, ULVT35 0.00%
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+
+Threshold voltage group cell usage:
+>> HVT35 100.00%, LVT35 0.00%, SVT35 0.00%, UHVT35 0.00%, ULVT35 0.00%
+
+  Beginning Isolate Ports
+  -----------------------
+
+Threshold voltage group cell usage:
+>> HVT35 100.00%, LVT35 0.00%, SVT35 0.00%, UHVT35 0.00%, ULVT35 0.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:05:29   37041.8      0.06       0.2       0.0                            367.8646
+    0:05:29   37042.7      0.06       0.2       0.0                            367.8743
+    0:05:29   37042.7      0.06       0.2       0.0                            367.8743
+    0:05:29   37042.7      0.06       0.2       0.0                            367.8743
+
+Threshold voltage group cell usage:
+>> HVT35 100.00%, LVT35 0.00%, SVT35 0.00%, UHVT35 0.00%, ULVT35 0.00%
+Information: The register 'BEBUF/size_out_n_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'BEBUF/size_out_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FIFO_BPC_S/MA0/data_memory_reg[4][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FIFO_BPC_S/MA0/data_memory_reg[6][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FIFO_BPC_S/MA0/data_memory_reg[5][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FIFO_BPC_S/MA0/data_memory_reg[7][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FIFO_BPC_S/MA0/data_memory_reg[15][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FIFO_BPC_S/MA0/data_memory_reg[11][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FIFO_BPC_S/MA0/data_memory_reg[3][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FIFO_BPC_S/MA0/data_memory_reg[2][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FIFO_BPC_S/MA0/data_memory_reg[9][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FIFO_BPC_S/MA0/data_memory_reg[0][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FIFO_BPC_S/MA0/data_memory_reg[1][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FIFO_BPC_S/MA0/data_memory_reg[8][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FIFO_BPC_S/MA0/data_memory_reg[10][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FIFO_BPC_S/MA0/data_memory_reg[12][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'FIFO_BPC_S/MA0/data_memory_reg[14][10]' is a constant and will be removed. (OPT-1206)
+    0:05:33   36976.1      0.06       0.2       0.0                            367.2464
+    0:05:35   36975.8      0.06       0.2       0.0                            367.2451
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:05:58   36183.8      0.05       0.2       0.0                            350.6747
+
+Threshold voltage group cell usage:
+>> HVT35 99.99%, LVT35 0.00%, SVT35 0.00%, UHVT35 0.00%, ULVT35 0.00%
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:06:09   33325.5      0.05       0.2       0.0                            299.6765
+    0:06:09   33325.5      0.05       0.2       0.0                            299.6765
+    0:06:09   33325.5      0.05       0.2       0.0                            299.6765
+    0:06:09   33337.6      0.04       0.1       0.0                            301.5564
+    0:06:17   33337.6      0.04       0.1       0.0                            301.5564
+    0:06:17   33337.6      0.04       0.1       0.0                            301.5564
+    0:06:17   33337.6      0.04       0.1       0.0                            301.5564
+    0:06:17   33337.6      0.04       0.1       0.0                            301.5564
+    0:06:26   33337.6      0.04       0.1       0.0                            301.5564
+    0:06:26   33337.6      0.04       0.1       0.0                            301.5564
+    0:06:26   33337.6      0.04       0.1       0.0                            301.5564
+    0:06:27   33366.1      0.01       0.0       0.0                            306.5046
+    0:06:39   33366.1      0.01       0.0       0.0                            306.5046
+    0:06:39   33363.1      0.00       0.0       0.0                            309.6216
+    0:06:39   33363.1      0.00       0.0       0.0                            309.6216
+    0:06:50   33145.7      0.00       0.0       0.0                            257.6594
+    0:06:50   33145.7      0.00       0.0       0.0                            257.6594
+    0:06:50   33146.1      0.00       0.0       0.0                            256.0144
+    0:06:50   33146.1      0.00       0.0       0.0                            256.0144
+    0:06:50   33145.1      0.00       0.0       0.0                            257.5791
+    0:06:50   33145.1      0.00       0.0       0.0                            257.5791
+    0:06:50   33145.1      0.00       0.0       0.0                            257.5791
+    0:06:50   33145.1      0.00       0.0       0.0                            257.5791
+    0:06:51   33145.1      0.00       0.0       0.0                            257.6577
+    0:06:51   33145.1      0.00       0.0       0.0                            257.6577
+    0:06:51   33145.1      0.00       0.0       0.0                            257.6577
+
+Threshold voltage group cell usage:
+>> HVT35 99.94%, LVT35 0.03%, SVT35 0.00%, UHVT35 0.00%, ULVT35 0.03%
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:06:51   33145.1      0.00       0.0       0.0                            257.6577
+    0:06:51   33145.1      0.00       0.0       0.0                            257.6577
+    0:06:51   33145.1      0.00       0.0       0.0                            257.6577
+    0:06:51   33145.1      0.00       0.0       0.0                            257.6577
+    0:06:51   33145.1      0.00       0.0       0.0                            257.6577
+    0:06:51   33145.1      0.00       0.0       0.0                            257.6577
+    0:06:51   33145.1      0.00       0.0       0.0                            257.6577
+    0:06:51   33145.1      0.00       0.0       0.0                            257.6577
+
+
+  Beginning Design Rule Fixing  (min_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:06:51   33145.1      0.00       0.0       0.0                            257.6577
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:06:52   33145.1      0.00       0.0       0.0                            257.6577
+    0:06:52   33145.1      0.00       0.0       0.0                            257.6577
+
+Threshold voltage group cell usage:
+>> HVT35 99.94%, LVT35 0.03%, SVT35 0.00%, UHVT35 0.00%, ULVT35 0.03%
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:06:52   33145.1      0.00       0.0       0.0                            257.6577
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+    0:06:59   36821.9      0.00       0.0       0.0                            595.6232
+    0:06:59   36821.9      0.00       0.0       0.0                            595.6232
+    0:06:59   36821.9      0.00       0.0       0.0                            595.6232
+    0:07:04   33401.3      0.00       0.0       0.0                            284.4471
+    0:07:04   33401.3      0.00       0.0       0.0                            284.4471
+    0:07:04   33401.3      0.00       0.0       0.0                            284.4471
+    0:07:04   33401.3      0.00       0.0       0.0                            284.4471
+    0:07:04   33401.3      0.00       0.0       0.0                            284.4471
+    0:07:04   33401.3      0.00       0.0       0.0                            284.4471
+    0:07:04   33401.3      0.00       0.0       0.0                            284.4471
+    0:07:04   33401.3      0.00       0.0       0.0                            284.4471
+    0:07:05   33401.3      0.00       0.0       0.0                            284.4471
+    0:07:05   33401.3      0.00       0.0       0.0                            284.4471
+    0:07:05   33401.3      0.00       0.0       0.0                            284.4471
+    0:07:05   33401.3      0.00       0.0       0.0                            284.4471
+    0:07:05   33401.3      0.00       0.0       0.0                            284.4471
+    0:07:05   33401.3      0.00       0.0       0.0                            284.4471
+    0:07:05   33401.3      0.00       0.0       0.0                            284.4471
+    0:07:05   33401.3      0.00       0.0       0.0                            284.4471
+    0:07:05   33401.3      0.00       0.0       0.0                            284.4471
+    0:07:05   33401.3      0.00       0.0       0.0                            284.4471
+    0:07:05   33401.3      0.00       0.0       0.0                            284.4471
+Information: The register 'FIFO_BPC_S/MA0/data_memory_reg[13][10]' is a constant and will be removed. (OPT-1206)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:07:07   33397.2      0.00       0.0       0.0                            284.4259
+    0:07:25   33212.6      0.00       0.0       0.0                            257.7196
+    0:07:27   33212.6      0.00       0.0       0.0                            257.7196
+    0:07:27   33212.6      0.00       0.0       0.0                            257.7196
+    0:07:31   33191.8      0.00       0.0       0.0                            255.4481
+
+Threshold voltage group cell usage:
+>> HVT35 99.88%, LVT35 0.05%, SVT35 0.05%, UHVT35 0.00%, ULVT35 0.03%
+
+  Beginning Delay Optimization HSVT Pass
+  --------------------------------------
+    0:07:38   33191.8      0.00       0.0       0.0                            255.4481
+    0:07:38   33191.8      0.00       0.0       0.0                            255.4481
+    0:07:38   33191.8      0.00       0.0       0.0                            255.4481
+    0:07:38   33191.8      0.00       0.0       0.0                            255.4481
+    0:07:45   33191.8      0.00       0.0       0.0                            255.4481
+    0:07:45   33191.8      0.00       0.0       0.0                            255.4481
+    0:07:45   33191.8      0.00       0.0       0.0                            255.4481
+    0:07:45   33191.8      0.00       0.0       0.0                            255.4481
+    0:07:56   33191.8      0.00       0.0       0.0                            255.4481
+    0:07:56   33191.8      0.00       0.0       0.0                            255.4481
+    0:07:56   33191.8      0.00       0.0       0.0                            255.4481
+    0:07:56   33191.8      0.00       0.0       0.0                            255.4481
+    0:08:13   33029.5      0.00       0.0       0.0                            253.7993
+    0:08:13   33029.5      0.00       0.0       0.0                            253.7993
+    0:08:13   33029.5      0.00       0.0       0.0                            253.7993
+    0:08:13   33029.5      0.00       0.0       0.0                            253.7993
+    0:08:14   33029.5      0.00       0.0       0.0                            253.8091
+    0:08:14   33029.5      0.00       0.0       0.0                            253.8091
+    0:08:18   33025.3      0.00       0.0       0.0                            253.8501
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ffbc0p99v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ffbc0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ffbc0p99vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ffg0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ffbc0p99v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ffbc0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ffbc0p99vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ffg0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ffbc0p99v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ffbc0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ffbc0p99vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ffg0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ffbc0p99v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ffbc0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ffbc0p99vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ffg0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ffbc0p99v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ffbc0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ffbc0p99vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ffg0p99v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_tt0p9v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_tt0p9v25c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_tt0p9v85c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_tt0p9v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_tt0p9v25c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_tt0p9v85c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_tt0p9v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_tt0p9v25c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_tt0p9v85c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_tt0p9v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_tt0p9v25c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_tt0p9v85c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_tt0p9v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_tt0p9v25c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_tt0p9v85c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ssgwc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ssgwc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ssgwc0p81vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_sswc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_sswc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p81vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_sswc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_sswc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p81vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_sswc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_sswc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ssgwc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ssgwc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_ssgwc0p81vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_sswc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_sswc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ssgwc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ssgwc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ssgwc0p81vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_sswc0p81v0c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_sswc0p81v125c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_sswc0p81vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_sswc0p81vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_sswc0p81vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/uhvt/latest/liberty/logic_synth/um28nchulogl35hsl140f_sswc0p81vn40c.db'
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_sswc0p81vn40c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'COMP_TOP' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'FIFO_BPC_D/MA0/clk': 4219 load(s), 1 driver(s)
+     Net 'FIFO_ZRL_D/rst_n': 1133 load(s), 1 driver(s)
+  Loading target library 'um28nchhlogl35hsl140f_sswc0p81vn40c'
+  Loading target library 'um28nchllogl35hsl140f_sswc0p81vn40c'
+  Loading target library 'um28nchslogl35hsl140f_sswc0p81vn40c'
+  Loading target library 'um28nchulogl35hsl140f_sswc0p81vn40c'
+  Loading target library 'um28nchvlogl35hsl140f_sswc0p81vn40c'
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+# ---------------------------------------
+# 4. Design Reports
+# ---------------------------------------
+check_design  > $topmodule_name.check_design.rpt
+report_constraint -all_violators -verbose -sig 10 > $topmodule_name.all_viol.rpt
+report_design > $topmodule_name.design.rpt
+report_area -physical -hierarchy > $topmodule_name.area.rpt
+report_cell > $topmodule_name.cell.rpt
+report_qor > $topmodule_name.qor.rpt
+report_reference > $topmodule_name.reference.rpt
+report_resources > $topmodule_name.resources.rpt
+report_hierarchy -full > $topmodule_name.hierarchy.rpt
+report_timing -nworst 10 -max_paths 10 > $topmodule_name.timing.rpt
+report_power -analysis_effort high > $topmodule_name.power.rpt
+report_threshold_voltage_group > $topmodule_name.vth.rpt
+# Dump out the constraints in an SDC file
+write_sdc $topmodule_name.constraints.sdc
+1
+# Dump out the synthesized database and gate-level-netlist
+write -hierarchy -format ddc -output      $topmodule_name.ddc
+Writing ddc file 'COMP_TOP.ddc'.
+1
+write -hierarchy -format verilog -output  $topmodule_name.netlist.v
+Writing verilog file '/home/urimi1204/RTL/syn/clk_24000/COMP_TOP.netlist.v'.
+Warning: Verilog writer has added 8 nets to module BPC_ENGINE using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 1 nets to module COMP_TOP using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+exit
+
+Memory usage for this session 15986 Mbytes.
+Memory usage for this session including child processes 15986 Mbytes.
+CPU usage for this session 2035 seconds ( 0.57 hours ).
+Elapsed time for this session 2059 seconds ( 0.57 hours ).
+
+Thank you...

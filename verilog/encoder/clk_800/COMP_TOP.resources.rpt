@@ -1,0 +1,92 @@
+ 
+****************************************
+Report : resources
+Design : COMP_TOP
+Version: Q-2019.12-SP5-5
+Date   : Wed Nov 10 16:56:55 2021
+****************************************
+
+
+Resource Report for this hierarchy in file /home/urimi1204/RTL/rtl/COMP_TOP.v
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| lte_x_1        | DW_cmp         | width=11   | lte_334 (COMP_TOP.v:334)   |
+| lte_x_2        | DW_cmp         | width=11   | lte_335 (COMP_TOP.v:335)   |
+| lt_x_5         | DW_cmp         | width=11   | lt_372 (COMP_TOP.v:372)    |
+| add_x_6        | DW01_add       | width=3    | add_374 (COMP_TOP.v:374)   |
+| lt_x_7         | DW_cmp         | width=11   | lt_378 (COMP_TOP.v:378)    |
+| add_x_8        | DW01_add       | width=3    | add_380 (COMP_TOP.v:380)   |
+| gte_x_9        | DW_cmp         | width=3    | gte_388 (COMP_TOP.v:388)   |
+| gte_x_10       | DW_cmp         | width=3    | gte_394 (COMP_TOP.v:394)   |
+| add_x_11       | DW01_inc       | width=3    | add_401 (COMP_TOP.v:401)   |
+| sub_x_52       | DW01_sub       | width=9    | ZEBUF/sub_77 (zrle_codebuf.v:77) |
+| ash_53         | DW_leftsh      | A_width=144 | ZEBUF/sll_77 (zrle_codebuf.v:77) |
+          |                | SH_width=32 |                           |
+| add_x_54       | DW01_add       | width=11   | ZEBUF/add_79 (zrle_codebuf.v:79) |
+| add_x_55       | DW01_inc       | width=4    | ZEBUF/add_87 (zrle_codebuf.v:87) |
+| add_x_72       | DW01_inc       | width=4    | SE0/add_58 (sr_engine.v:58) |
+| add_x_84       | DW01_inc       | width=5    | FIFO_SR_S/WP0/add_104 (FIFO.v:104) |
+| add_x_85       | DW01_inc       | width=5    | FIFO_ZRL_S/WP0/add_104 (FIFO.v:104) |
+| add_x_86       | DW01_inc       | width=5    | FIFO_BPC_S/WP0/add_104 (FIFO.v:104) |
+| add_x_87       | DW01_inc       | width=5    | FIFO_SR_S/RP0/add_129 (FIFO.v:129) |
+| add_x_88       | DW01_inc       | width=5    | FIFO_ZRL_S/RP0/add_129 (FIFO.v:129) |
+| add_x_89       | DW01_inc       | width=5    | FIFO_BPC_S/RP0/add_129 (FIFO.v:129) |
+| sub_x_90       | DW01_sub       | width=4    | FIFO_SR_S/SS0/sub_185 (FIFO.v:185) |
+| sub_x_91       | DW01_sub       | width=4    | FIFO_ZRL_S/SS0/sub_185 (FIFO.v:185) |
+| sub_x_92       | DW01_sub       | width=4    | FIFO_BPC_S/SS0/sub_185 (FIFO.v:185) |
+| DP_OP_178J2_122_604             |            |                            |
+|                | DP_OP_178J2_122_604 |       |                            |
+=============================================================================
+
+Datapath Report for DP_OP_178J2_122_604
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_178J2_122_604  | ZEBUF/add_78 (zrle_codebuf.v:78)                    |
+|                      | ZEBUF/sub_86 (zrle_codebuf.v:86)                    |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 8     |                                          |
+| I2    | PI   | Unsigned | 7     |                                          |
+| O1    | PO   | Unsigned | 8     | I1 + I2 (zrle_codebuf.v:78)              |
+| O2    | PO   | Signed   | 8     | O1 - $unsigned(7'b1000000) (zrle_codebuf.v:86) |
+==============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| lte_x_1            | DW_cmp           | apparch (area)     |                |
+| lt_x_5             | DW_cmp           | apparch (area)     |                |
+| add_x_6            | DW01_add         | apparch (area)     |                |
+| lt_x_7             | DW_cmp           | apparch (area)     |                |
+| add_x_8            | DW01_add         | apparch (area)     |                |
+| gte_x_9            | DW_cmp           | apparch (area)     |                |
+| gte_x_10           | DW_cmp           | apparch (area)     |                |
+| add_x_11           | DW01_inc         | apparch (area)     |                |
+| sub_x_52           | DW01_sub         | apparch (area)     |                |
+| ash_53             | DW_leftsh        | astr (area)        |                |
+| add_x_54           | DW01_add         | apparch (area)     |                |
+| add_x_55           | DW01_inc         | apparch (area)     |                |
+| add_x_72           | DW01_inc         | apparch (area)     |                |
+| add_x_84           | DW01_inc         | apparch (area)     |                |
+| add_x_85           | DW01_inc         | apparch (area)     |                |
+| add_x_86           | DW01_inc         | apparch (area)     |                |
+| add_x_87           | DW01_inc         | apparch (area)     |                |
+| add_x_88           | DW01_inc         | apparch (area)     |                |
+| add_x_89           | DW01_inc         | apparch (area)     |                |
+| sub_x_90           | DW01_sub         | apparch (area)     |                |
+| sub_x_91           | DW01_sub         | apparch (area)     |                |
+| sub_x_92           | DW01_sub         | apparch (area)     |                |
+| DP_OP_178J2_122_604                   |                    |                |
+|                    | DP_OP_178J2_122_604 | str (area)      |                |
+===============================================================================
+
+1

@@ -1,0 +1,163 @@
+ 
+****************************************
+Report : reference
+Design : COMP_TOP
+Version: Q-2019.12-SP5-5
+Date   : Wed Nov 10 15:47:00 2021
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+BPC_CODEBUF                    4015.367915       1   4015.367915  h, n
+BPC_ENGINE                    11430.551849       1  11430.551849  h, n
+FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_1
+                               4319.615979       1   4319.615979  h, n
+FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_2
+                               4319.783979       1   4319.783979  h, n
+MEMORY_ARRAY_BITWIDTH64_STAGE16_0
+                               4266.695980       1   4266.695980  h, n
+STM_AN2_S_0P5      um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.672000      15     10.080000  
+STM_AN3B_0P5       um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000       2      1.680000  
+STM_AN4B_0P5       um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.008000       4      4.032000  
+STM_AN4_L_0P5      um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.008000       2      2.016000  
+STM_AO2BB2_0P5     um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.008000     326    328.608005  
+STM_AO21B_1        um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000      18     15.120000  
+STM_AO21_0P5       um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000       9      7.560000  
+STM_AO22_0P5       um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.008000     102    102.816002  
+STM_AO211_0P5      um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.008000       7      7.056000  
+STM_AO221_0P5      um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.176000       1      1.176000  
+STM_AOA211_DG_1    um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.008000      11     11.088000  
+STM_AOAI211_0P5    um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000      36     30.239999  
+STM_AOI21B_0P5     um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000       2      1.680000  
+STM_AOI21_0P5      um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.672000     113     75.935999  
+STM_AOI22_0P5      um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000     403    338.519989  
+STM_AOI31_0P5      um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000      14     11.760000  
+STM_AOI211_0P5     um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000      35     29.399999  
+STM_AOI221_0P5     um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.008000       2      2.016000  
+STM_AOI222_0P5     um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.176000      89    104.664000  
+STM_BUF_1          um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.504000       9      4.536000  
+STM_EO2_0P5        um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.512000      50     75.599998  
+STM_EO3_0P5        um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.512000       8     12.096000  
+STM_FDPQ_1         um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  2.520000     352    887.039993  n
+STM_FDPRBQ_1       um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  3.024000      34    102.815998  n
+STM_FDPRBQ_V2_1    um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  2.856000     421   1202.375978  n
+STM_INV_0P5        um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.336000     489    164.303998  
+STM_LDPQ_1         um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.344000     225    302.399996  n
+STM_MUX2AN2_MG_0P75
+                   um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.344000       1      1.344000  
+STM_MUX2_0P5       um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.176000      43     50.568000  
+STM_MUXI2_MG_0P5   um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.008000      58     58.464001  
+STM_ND2B_MM_0P5    um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.672000       2      1.344000  
+STM_ND2_0P5        um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.504000     257    129.528002  
+STM_ND3B_0P5       um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000       1      0.840000  
+STM_ND3_0P5        um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.672000      34     22.848000  
+STM_ND4_0P5        um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000      37     31.079999  
+STM_NR2B_V1DG_1    um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.672000       6      4.032000  
+STM_NR2_S_0P8      um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.504000     162     81.648001  
+STM_NR2_S_1        um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.504000       1      0.504000  
+STM_NR3B_MG_0P75   um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000       8      6.720000  
+STM_NR3_G_0P5      um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.672000      25     16.800000  
+STM_NR3_G_1        um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.672000       1      0.672000  
+STM_NR4BB_0P5      um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.176000       1      1.176000  
+STM_NR4_0P5        um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000      45     37.799999  
+STM_OA2BB2_0P5     um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.008000       3      3.024000  
+STM_OA21B_0P5      um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000       2      1.680000  
+STM_OA21_1         um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000       7      5.880000  
+STM_OA22_DG_1      um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.008000       5      5.040000  
+STM_OA31_1         um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.008000       1      1.008000  
+STM_OAI21B_0P5     um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000       6      5.040000  
+STM_OAI21_0P5      um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.672000      83     55.775999  
+STM_OAI22_0P5      um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000     110     92.399997  
+STM_OAI31_G_0P5    um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000      11      9.240000  
+STM_OAI211_0P5     um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000      86     72.239998  
+STM_OAI221_0P5     um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.008000       2      2.016000  
+STM_OAI222_0P75    um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.344000      35     47.039999  
+STM_OAO211_DG_1    um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.008000       9      9.072000  
+STM_OAOI211_0P5    um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000      35     29.399999  
+STM_OR2_1          um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.672000      30     20.160000  
+STM_OR3B_0P5       um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000      10      8.400000  
+STM_OR3_L_0P5      um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000       2      1.680000  
+STM_OR4B_1         um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.008000       5      5.040000  
+STQ_TIE0_1         um28nchllogl35hsl140f_ssgwc0p81vn40c
+                                  0.672000       1      0.672000  
+STR_INV_18         um28nchvlogl35hsl140f_ssgwc0p81vn40c
+                                  3.192000       4     12.768000  
+STR_NR2_1P5        um28nchvlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000       3      2.520000  
+STR_NR3_G_1P5      um28nchvlogl35hsl140f_ssgwc0p81vn40c
+                                  1.176000       1      1.176000  
+-----------------------------------------------------------------------------
+Total 70 references                                 33025.271648
+1

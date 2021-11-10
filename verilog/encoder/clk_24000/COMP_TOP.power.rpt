@@ -1,0 +1,74 @@
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : COMP_TOP
+Version: Q-2019.12-SP5-5
+Date   : Wed Nov 10 15:47:05 2021
+****************************************
+
+
+Library(s) Used:
+
+    um28nchhlogl35hsl140f_ssgwc0p81vn40c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ssgwc0p81vn40c.db)
+    um28nchvlogl35hsl140f_ssgwc0p81vn40c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/ulvt/latest/liberty/logic_synth/um28nchvlogl35hsl140f_ssgwc0p81vn40c.db)
+    um28nchllogl35hsl140f_ssgwc0p81vn40c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p81vn40c.db)
+    um28nchslogl35hsl140f_ssgwc0p81vn40c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p81vn40c.db)
+
+
+Operating Conditions: SSGWC0P81VN40C   Library: um28nchhlogl35hsl140f_ssgwc0p81vn40c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+COMP_TOP               ZeroWLM           um28nchhlogl35hsl140f_ssgwc0p81vn40c
+BPC_ENGINE             ZeroWLM           um28nchhlogl35hsl140f_ssgwc0p81vn40c
+BPC_CODEBUF            ZeroWLM           um28nchhlogl35hsl140f_ssgwc0p81vn40c
+FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_2
+                       ZeroWLM           um28nchhlogl35hsl140f_ssgwc0p81vn40c
+DBX_ENC_1              ZeroWLM           um28nchhlogl35hsl140f_ssgwc0p81vn40c
+MEMORY_ARRAY_BITWIDTH64_STAGE16_2
+                       ZeroWLM           um28nchhlogl35hsl140f_ssgwc0p81vn40c
+FIFO_BITWIDTH64_STAGE16_STAGE_BITWIDTH4_1
+                       ZeroWLM           um28nchhlogl35hsl140f_ssgwc0p81vn40c
+MEMORY_ARRAY_BITWIDTH64_STAGE16_0
+                       ZeroWLM           um28nchhlogl35hsl140f_ssgwc0p81vn40c
+MEMORY_ARRAY_BITWIDTH64_STAGE16_1
+                       ZeroWLM           um28nchhlogl35hsl140f_ssgwc0p81vn40c
+DBX_ENC_0              ZeroWLM           um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+
+Global Operating Voltage = 0.81 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  34.9595 mW   (82%)
+  Net Switching Power  =   7.5820 mW   (18%)
+                         ---------
+Total Dynamic Power    =  42.5415 mW  (100%)
+
+Cell Leakage Power     = 236.7510 nW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential        32.1451            0.2059          130.4705           32.3512  (  76.05%)
+combinational      2.8146            7.3761          106.2523           10.1906  (  23.95%)
+--------------------------------------------------------------------------------------------------
+Total             34.9598 mW         7.5820 mW       236.7229 nW        42.5417 mW
+1
