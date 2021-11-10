@@ -196,25 +196,21 @@ module STATUS_SIGNAL #(
 
   // overflow
   always @(posedge clk or negedge rst_n) begin
-    if (~rst_n)
+    if (~rst_n) begin
       fifo_overflow_o <= 0;
-    else if ((overflow_set == 1) && (fifo_rd_i == 0))
-      fifo_overflow_o <= 1;
-    else if (fifo_rd_i)
-      fifo_overflow_o <= 0;
-    else
-      fifo_overflow_o <= fifo_overflow_o;
+    end
+    else begin
+      fifo_overflow_o <= overflow_set ? 1 : 0;
+    end
   end
 
   // underflow
   always @(posedge clk or negedge rst_n) begin
-    if (~rst_n)
+    if (~rst_n) begin
       fifo_underflow_o <= 0;
-    else if ((underflow_set == 1) && (fifo_we_i == 0))
-      fifo_underflow_o <= 1;
-    else if (fifo_we_i)
-      fifo_underflow_o <= 0;
-    else
-      fifo_underflow_o <= fifo_underflow_o;
+    end
+    else begin
+      fifo_underflow_o <= underflow_set ? 1 : 0;
+    end
   end
 endmodule
