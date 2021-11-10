@@ -1,0 +1,29 @@
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  ready_i (in)                                            0.00       0.00 r
+  BPC_DECOMP_ENGINE/ready_i (BPC_DECOMP)                  0.00       0.00 r
+  BPC_DECOMP_ENGINE/U10/X (STC_ND2_0P8)                   0.05       0.05 f
+  BPC_DECOMP_ENGINE/U6/X (STC_NR2B_1)                     0.10       0.15 r
+  BPC_DECOMP_ENGINE/U13/X (STC_BUF_S_1)                   0.07       0.22 r
+  BPC_DECOMP_ENGINE/U9245/X (STC_AOI22_0P5)               0.02       0.24 f
+  BPC_DECOMP_ENGINE/U9246/X (STC_AOI22_0P5)               0.02       0.26 r
+  BPC_DECOMP_ENGINE/data_o[37] (BPC_DECOMP)               0.00       0.26 r
+  U765/X (STC_AOI22_0P5)                                  0.02       0.28 f
+  U767/X (STC_ND2_0P5)                                    0.01       0.30 r
+  data_o[37] (out)                                        0.00       0.30 r
+  data arrival time                                                  0.30
+
+  clock clk (rise edge)                                   0.75       0.75
+  clock network delay (ideal)                             0.00       0.75
+  output external delay                                   0.00       0.75
+  data required time                                                 0.75
+  --------------------------------------------------------------------------
+  data required time                                                 0.75
+  data arrival time                                                 -0.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.45
+
+

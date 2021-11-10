@@ -1,0 +1,418 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : DECOMP_TOP
+Version: Q-2019.12-SP5-5
+Date   : Wed Nov 10 17:30:43 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: SSGWC0P81VN40C   Library: um28nchhlogl35hsl140f_ssgwc0p81vn40c
+Wire Load Model Mode: enclosed
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[23] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+  BPC_DECOMP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  ready_i (in)                                            0.00       0.00 r
+  BPC_DECOMP_ENGINE/ready_i (BPC_DECOMP)                  0.00       0.00 r
+  BPC_DECOMP_ENGINE/U7/X (STM_ND2_0P5)                    0.17       0.17 f
+  BPC_DECOMP_ENGINE/U6/X (STM_INV_0P5)                    0.13       0.31 r
+  BPC_DECOMP_ENGINE/U4/X (STQ_ND2_S_2)                    0.08       0.39 f
+  BPC_DECOMP_ENGINE/U27/X (STM_INV_1)                     0.10       0.49 r
+  BPC_DECOMP_ENGINE/U55/X (STM_AOI22_0P5)                 0.06       0.55 f
+  BPC_DECOMP_ENGINE/U216/X (STM_AOI22_0P5)                0.06       0.62 r
+  BPC_DECOMP_ENGINE/data_o[23] (BPC_DECOMP)               0.00       0.62 r
+  U443/X (STM_AOI22_0P5)                                  0.05       0.66 f
+  U749/X (STM_ND2_0P5)                                    0.05       0.71 r
+  data_o[23] (out)                                        0.00       0.71 r
+  data arrival time                                                  0.71
+
+  clock clk (rise edge)                                   0.75       0.75
+  clock network delay (ideal)                             0.00       0.75
+  output external delay                                   0.00       0.75
+  data required time                                                 0.75
+  --------------------------------------------------------------------------
+  data required time                                                 0.75
+  data arrival time                                                 -0.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[7] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+  BPC_DECOMP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  ready_i (in)                                            0.00       0.00 r
+  BPC_DECOMP_ENGINE/ready_i (BPC_DECOMP)                  0.00       0.00 r
+  BPC_DECOMP_ENGINE/U7/X (STM_ND2_0P5)                    0.17       0.17 f
+  BPC_DECOMP_ENGINE/U6/X (STM_INV_0P5)                    0.13       0.31 r
+  BPC_DECOMP_ENGINE/U4/X (STQ_ND2_S_2)                    0.08       0.39 f
+  BPC_DECOMP_ENGINE/U27/X (STM_INV_1)                     0.10       0.49 r
+  BPC_DECOMP_ENGINE/U39/X (STM_AOI22_0P5)                 0.06       0.55 f
+  BPC_DECOMP_ENGINE/U200/X (STM_AOI22_0P5)                0.06       0.62 r
+  BPC_DECOMP_ENGINE/data_o[7] (BPC_DECOMP)                0.00       0.62 r
+  U420/X (STM_AOI22_0P5)                                  0.05       0.66 f
+  U765/X (STM_ND2_0P5)                                    0.05       0.71 r
+  data_o[7] (out)                                         0.00       0.71 r
+  data arrival time                                                  0.71
+
+  clock clk (rise edge)                                   0.75       0.75
+  clock network delay (ideal)                             0.00       0.75
+  output external delay                                   0.00       0.75
+  data required time                                                 0.75
+  --------------------------------------------------------------------------
+  data required time                                                 0.75
+  data arrival time                                                 -0.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[21] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+  BPC_DECOMP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  ready_i (in)                                            0.00       0.00 r
+  BPC_DECOMP_ENGINE/ready_i (BPC_DECOMP)                  0.00       0.00 r
+  BPC_DECOMP_ENGINE/U7/X (STM_ND2_0P5)                    0.17       0.17 f
+  BPC_DECOMP_ENGINE/U6/X (STM_INV_0P5)                    0.13       0.31 r
+  BPC_DECOMP_ENGINE/U4/X (STQ_ND2_S_2)                    0.08       0.39 f
+  BPC_DECOMP_ENGINE/U27/X (STM_INV_1)                     0.10       0.49 r
+  BPC_DECOMP_ENGINE/U53/X (STM_AOI22_0P5)                 0.06       0.55 f
+  BPC_DECOMP_ENGINE/U214/X (STM_AOI22_0P5)                0.06       0.62 r
+  BPC_DECOMP_ENGINE/data_o[21] (BPC_DECOMP)               0.00       0.62 r
+  U440/X (STM_AOI22_0P5)                                  0.05       0.66 f
+  U751/X (STM_ND2_0P5)                                    0.04       0.71 r
+  data_o[21] (out)                                        0.00       0.71 r
+  data arrival time                                                  0.71
+
+  clock clk (rise edge)                                   0.75       0.75
+  clock network delay (ideal)                             0.00       0.75
+  output external delay                                   0.00       0.75
+  data required time                                                 0.75
+  --------------------------------------------------------------------------
+  data required time                                                 0.75
+  data arrival time                                                 -0.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[5] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+  BPC_DECOMP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  ready_i (in)                                            0.00       0.00 r
+  BPC_DECOMP_ENGINE/ready_i (BPC_DECOMP)                  0.00       0.00 r
+  BPC_DECOMP_ENGINE/U7/X (STM_ND2_0P5)                    0.17       0.17 f
+  BPC_DECOMP_ENGINE/U6/X (STM_INV_0P5)                    0.13       0.31 r
+  BPC_DECOMP_ENGINE/U4/X (STQ_ND2_S_2)                    0.08       0.39 f
+  BPC_DECOMP_ENGINE/U27/X (STM_INV_1)                     0.10       0.49 r
+  BPC_DECOMP_ENGINE/U37/X (STM_AOI22_0P5)                 0.06       0.55 f
+  BPC_DECOMP_ENGINE/U198/X (STM_AOI22_0P5)                0.06       0.62 r
+  BPC_DECOMP_ENGINE/data_o[5] (BPC_DECOMP)                0.00       0.62 r
+  U417/X (STM_AOI22_0P5)                                  0.05       0.66 f
+  U767/X (STM_ND2_0P5)                                    0.04       0.71 r
+  data_o[5] (out)                                         0.00       0.71 r
+  data arrival time                                                  0.71
+
+  clock clk (rise edge)                                   0.75       0.75
+  clock network delay (ideal)                             0.00       0.75
+  output external delay                                   0.00       0.75
+  data required time                                                 0.75
+  --------------------------------------------------------------------------
+  data required time                                                 0.75
+  data arrival time                                                 -0.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[23] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+  BPC_DECOMP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  ready_i (in)                                            0.00       0.00 r
+  BPC_DECOMP_ENGINE/ready_i (BPC_DECOMP)                  0.00       0.00 r
+  BPC_DECOMP_ENGINE/U7/X (STM_ND2_0P5)                    0.17       0.17 f
+  BPC_DECOMP_ENGINE/U6/X (STM_INV_0P5)                    0.13       0.31 r
+  BPC_DECOMP_ENGINE/U4/X (STQ_ND2_S_2)                    0.08       0.39 f
+  BPC_DECOMP_ENGINE/U27/X (STM_INV_1)                     0.10       0.49 r
+  BPC_DECOMP_ENGINE/U55/X (STM_AOI22_0P5)                 0.06       0.55 f
+  BPC_DECOMP_ENGINE/U216/X (STM_AOI22_0P5)                0.06       0.62 r
+  BPC_DECOMP_ENGINE/data_o[23] (BPC_DECOMP)               0.00       0.62 r
+  U443/X (STM_AOI22_0P5)                                  0.05       0.66 f
+  U749/X (STM_ND2_0P5)                                    0.05       0.71 r
+  data_o[23] (out)                                        0.00       0.71 r
+  data arrival time                                                  0.71
+
+  clock clk (rise edge)                                   0.75       0.75
+  clock network delay (ideal)                             0.00       0.75
+  output external delay                                   0.00       0.75
+  data required time                                                 0.75
+  --------------------------------------------------------------------------
+  data required time                                                 0.75
+  data arrival time                                                 -0.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[7] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+  BPC_DECOMP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  ready_i (in)                                            0.00       0.00 r
+  BPC_DECOMP_ENGINE/ready_i (BPC_DECOMP)                  0.00       0.00 r
+  BPC_DECOMP_ENGINE/U7/X (STM_ND2_0P5)                    0.17       0.17 f
+  BPC_DECOMP_ENGINE/U6/X (STM_INV_0P5)                    0.13       0.31 r
+  BPC_DECOMP_ENGINE/U4/X (STQ_ND2_S_2)                    0.08       0.39 f
+  BPC_DECOMP_ENGINE/U27/X (STM_INV_1)                     0.10       0.49 r
+  BPC_DECOMP_ENGINE/U39/X (STM_AOI22_0P5)                 0.06       0.55 f
+  BPC_DECOMP_ENGINE/U200/X (STM_AOI22_0P5)                0.06       0.62 r
+  BPC_DECOMP_ENGINE/data_o[7] (BPC_DECOMP)                0.00       0.62 r
+  U420/X (STM_AOI22_0P5)                                  0.05       0.66 f
+  U765/X (STM_ND2_0P5)                                    0.05       0.71 r
+  data_o[7] (out)                                         0.00       0.71 r
+  data arrival time                                                  0.71
+
+  clock clk (rise edge)                                   0.75       0.75
+  clock network delay (ideal)                             0.00       0.75
+  output external delay                                   0.00       0.75
+  data required time                                                 0.75
+  --------------------------------------------------------------------------
+  data required time                                                 0.75
+  data arrival time                                                 -0.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[23] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+  BPC_DECOMP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  ready_i (in)                                            0.00       0.00 r
+  BPC_DECOMP_ENGINE/ready_i (BPC_DECOMP)                  0.00       0.00 r
+  BPC_DECOMP_ENGINE/U7/X (STM_ND2_0P5)                    0.17       0.17 f
+  BPC_DECOMP_ENGINE/U6/X (STM_INV_0P5)                    0.13       0.31 r
+  BPC_DECOMP_ENGINE/U4/X (STQ_ND2_S_2)                    0.08       0.39 f
+  BPC_DECOMP_ENGINE/U27/X (STM_INV_1)                     0.10       0.49 r
+  BPC_DECOMP_ENGINE/U55/X (STM_AOI22_0P5)                 0.06       0.55 f
+  BPC_DECOMP_ENGINE/U216/X (STM_AOI22_0P5)                0.06       0.62 r
+  BPC_DECOMP_ENGINE/data_o[23] (BPC_DECOMP)               0.00       0.62 r
+  U443/X (STM_AOI22_0P5)                                  0.05       0.66 f
+  U749/X (STM_ND2_0P5)                                    0.05       0.71 r
+  data_o[23] (out)                                        0.00       0.71 r
+  data arrival time                                                  0.71
+
+  clock clk (rise edge)                                   0.75       0.75
+  clock network delay (ideal)                             0.00       0.75
+  output external delay                                   0.00       0.75
+  data required time                                                 0.75
+  --------------------------------------------------------------------------
+  data required time                                                 0.75
+  data arrival time                                                 -0.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[7] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+  BPC_DECOMP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  ready_i (in)                                            0.00       0.00 r
+  BPC_DECOMP_ENGINE/ready_i (BPC_DECOMP)                  0.00       0.00 r
+  BPC_DECOMP_ENGINE/U7/X (STM_ND2_0P5)                    0.17       0.17 f
+  BPC_DECOMP_ENGINE/U6/X (STM_INV_0P5)                    0.13       0.31 r
+  BPC_DECOMP_ENGINE/U4/X (STQ_ND2_S_2)                    0.08       0.39 f
+  BPC_DECOMP_ENGINE/U27/X (STM_INV_1)                     0.10       0.49 r
+  BPC_DECOMP_ENGINE/U39/X (STM_AOI22_0P5)                 0.06       0.55 f
+  BPC_DECOMP_ENGINE/U200/X (STM_AOI22_0P5)                0.06       0.62 r
+  BPC_DECOMP_ENGINE/data_o[7] (BPC_DECOMP)                0.00       0.62 r
+  U420/X (STM_AOI22_0P5)                                  0.05       0.66 f
+  U765/X (STM_ND2_0P5)                                    0.05       0.71 r
+  data_o[7] (out)                                         0.00       0.71 r
+  data arrival time                                                  0.71
+
+  clock clk (rise edge)                                   0.75       0.75
+  clock network delay (ideal)                             0.00       0.75
+  output external delay                                   0.00       0.75
+  data required time                                                 0.75
+  --------------------------------------------------------------------------
+  data required time                                                 0.75
+  data arrival time                                                 -0.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[23] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+  BPC_DECOMP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  ready_i (in)                                            0.00       0.00 r
+  BPC_DECOMP_ENGINE/ready_i (BPC_DECOMP)                  0.00       0.00 r
+  BPC_DECOMP_ENGINE/U7/X (STM_ND2_0P5)                    0.17       0.17 f
+  BPC_DECOMP_ENGINE/U6/X (STM_INV_0P5)                    0.13       0.31 r
+  BPC_DECOMP_ENGINE/U4/X (STQ_ND2_S_2)                    0.08       0.39 f
+  BPC_DECOMP_ENGINE/U27/X (STM_INV_1)                     0.10       0.49 r
+  BPC_DECOMP_ENGINE/U55/X (STM_AOI22_0P5)                 0.06       0.55 f
+  BPC_DECOMP_ENGINE/U216/X (STM_AOI22_0P5)                0.06       0.62 r
+  BPC_DECOMP_ENGINE/data_o[23] (BPC_DECOMP)               0.00       0.62 r
+  U443/X (STM_AOI22_0P5)                                  0.05       0.66 f
+  U749/X (STM_ND2_0P5)                                    0.05       0.71 r
+  data_o[23] (out)                                        0.00       0.71 r
+  data arrival time                                                  0.71
+
+  clock clk (rise edge)                                   0.75       0.75
+  clock network delay (ideal)                             0.00       0.75
+  output external delay                                   0.00       0.75
+  data required time                                                 0.75
+  --------------------------------------------------------------------------
+  data required time                                                 0.75
+  data arrival time                                                 -0.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: ready_i (input port clocked by clk)
+  Endpoint: data_o[7] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DECOMP_TOP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+  BPC_DECOMP         ZeroWLM               um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  ready_i (in)                                            0.00       0.00 r
+  BPC_DECOMP_ENGINE/ready_i (BPC_DECOMP)                  0.00       0.00 r
+  BPC_DECOMP_ENGINE/U7/X (STM_ND2_0P5)                    0.17       0.17 f
+  BPC_DECOMP_ENGINE/U6/X (STM_INV_0P5)                    0.13       0.31 r
+  BPC_DECOMP_ENGINE/U4/X (STQ_ND2_S_2)                    0.08       0.39 f
+  BPC_DECOMP_ENGINE/U27/X (STM_INV_1)                     0.10       0.49 r
+  BPC_DECOMP_ENGINE/U39/X (STM_AOI22_0P5)                 0.06       0.55 f
+  BPC_DECOMP_ENGINE/U200/X (STM_AOI22_0P5)                0.06       0.62 r
+  BPC_DECOMP_ENGINE/data_o[7] (BPC_DECOMP)                0.00       0.62 r
+  U420/X (STM_AOI22_0P5)                                  0.05       0.66 f
+  U765/X (STM_ND2_0P5)                                    0.05       0.71 r
+  data_o[7] (out)                                         0.00       0.71 r
+  data arrival time                                                  0.71
+
+  clock clk (rise edge)                                   0.75       0.75
+  clock network delay (ideal)                             0.00       0.75
+  output external delay                                   0.00       0.75
+  data required time                                                 0.75
+  --------------------------------------------------------------------------
+  data required time                                                 0.75
+  data arrival time                                                 -0.71
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+1

@@ -1,0 +1,62 @@
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : DECOMP_TOP
+Version: Q-2019.12-SP5-5
+Date   : Wed Nov 10 17:30:46 2021
+****************************************
+
+
+Library(s) Used:
+
+    um28nchhlogl35hsl140f_ssgwc0p81vn40c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ssgwc0p81vn40c.db)
+    um28nchllogl35hsl140f_ssgwc0p81vn40c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p81vn40c.db)
+    um28nchslogl35hsl140f_ssgwc0p81vn40c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p81vn40c.db)
+
+
+Operating Conditions: SSGWC0P81VN40C   Library: um28nchhlogl35hsl140f_ssgwc0p81vn40c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+DECOMP_TOP             ZeroWLM           um28nchhlogl35hsl140f_ssgwc0p81vn40c
+ZRLE_DECOMP            ZeroWLM           um28nchhlogl35hsl140f_ssgwc0p81vn40c
+BPC_DECOMP             ZeroWLM           um28nchhlogl35hsl140f_ssgwc0p81vn40c
+DECODER_GROUP          ZeroWLM           um28nchhlogl35hsl140f_ssgwc0p81vn40c
+
+
+Global Operating Voltage = 0.81 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 511.1392 uW   (76%)
+  Net Switching Power  = 160.9483 uW   (24%)
+                         ---------
+Total Dynamic Power    = 672.0875 uW  (100%)
+
+Cell Leakage Power     = 118.4139 nW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.3769        7.6399e-04           38.3608            0.3777  (  56.19%)
+combinational      0.1342            0.1602           80.0437            0.2945  (  43.81%)
+--------------------------------------------------------------------------------------------------
+Total              0.5111 mW         0.1609 mW       118.4046 nW         0.6722 mW
+1

@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : reference
+Design : DECOMP_TOP
+Version: Q-2019.12-SP5-5
+Date   : Wed Nov 10 17:30:43 2021
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+BPC_DECOMP                    13397.663780       1  13397.663780  h, n
+STM_AN3B_0P5       um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000       1      0.840000  
+STM_AO21_0P5       um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000       1      0.840000  
+STM_AOAI211_0P5    um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000       1      0.840000  
+STM_AOI21_0P5      um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.672000       1      0.672000  
+STM_AOI22_0P5      um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000      94     78.959998  
+STM_AOI222_0P5     um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.176000       1      1.176000  
+STM_BUF_1          um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.504000       2      1.008000  
+STM_FDPRBQ_V2_1    um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  2.856000       4     11.424000  n
+STM_INV_0P5        um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.336000      74     24.864000  
+STM_LDPQ_1         um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.344000       2      2.688000  n
+STM_MUX2AN2_MG_1   um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.344000       1      1.344000  
+STM_ND2_0P5        um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.504000      71     35.784001  
+STM_ND3_1          um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.672000       1      0.672000  
+STM_NR2_1          um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.504000       2      1.008000  
+STM_NR2_S_0P8      um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.504000     130     65.520001  
+STM_NR2_S_1        um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.504000       1      0.504000  
+STM_NR4_0P5        um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000       1      0.840000  
+STM_OA21_1         um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.840000       2      1.680000  
+STM_OAI221_0P5     um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  1.008000       3      3.024000  
+STM_OR2_1          um28nchhlogl35hsl140f_ssgwc0p81vn40c
+                                  0.672000       1      0.672000  
+STQ_TIE0_1         um28nchllogl35hsl140f_ssgwc0p81vn40c
+                                  0.672000       1      0.672000  
+ZRLE_DECOMP                    2420.711964       1   2420.711964  h, n
+-----------------------------------------------------------------------------
+Total 23 references                                 16053.407742
+1

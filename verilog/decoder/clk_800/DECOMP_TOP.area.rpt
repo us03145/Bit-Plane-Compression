@@ -1,0 +1,50 @@
+ 
+****************************************
+Report : area
+Design : DECOMP_TOP
+Version: Q-2019.12-SP5-5
+Date   : Wed Nov 10 17:30:43 2021
+****************************************
+
+Library(s) Used:
+
+    um28nchhlogl35hsl140f_ssgwc0p81vn40c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/hvt/latest/liberty/logic_synth/um28nchhlogl35hsl140f_ssgwc0p81vn40c.db)
+    um28nchllogl35hsl140f_ssgwc0p81vn40c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p81vn40c.db)
+    um28nchslogl35hsl140f_ssgwc0p81vn40c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/svt/latest/liberty/logic_synth/um28nchslogl35hsl140f_ssgwc0p81vn40c.db)
+
+Number of ports:                          952
+Number of nets:                         18449
+Number of cells:                        17554
+Number of combinational cells:          16160
+Number of sequential cells:              1391
+Number of macros/black boxes:               0
+Number of buf/inv:                       1739
+Number of references:                      23
+
+Combinational area:              12070.631818
+Buf/Inv area:                      598.583993
+Noncombinational area:            3982.775924
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 16053.407742
+Total area:                 undefined
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  -------------
+DECOMP_TOP                        16053.4077    100.0    220.9200    14.1120  0.0000  DECOMP_TOP
+BPC_DECOMP_ENGINE                 13397.6638     83.5   7370.9999  3376.1279  0.0000  BPC_DECOMP
+BPC_DECOMP_ENGINE/DEC_GRP          2650.5360     16.5   2650.5360     0.0000  0.0000  DECODER_GROUP
+ZRL_DECOMP_ENGINE                  2420.7120     15.1   1828.1760   592.5360  0.0000  ZRLE_DECOMP
+--------------------------------  ----------  -------  ----------  ---------  ------  -------------
+Total                                                  12070.6318  3982.7759  0.0000
+
+1
