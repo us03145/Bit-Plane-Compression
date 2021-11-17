@@ -30,8 +30,7 @@ module BPC_DECOMP
 	reg 		[15:0]		base_word, base_word_n;
 	reg 		[62:0]		bit_plane	[0:15];
 	reg		[62:0]		bit_plane_n	[0:15];
-	reg 				valid_bp;
-	reg 				n_get, n_get_n;
+	reg 				valid_bp, valid_bp_n;
 
 	wire 				valid_d		[0:3];
 	wire 		[62:0]		dbx		[0:3];
@@ -46,17 +45,15 @@ module BPC_DECOMP
 	// output var
 	
 	// stage 2 var
-	reg				n_valid, n_valid_n;
-	reg 		[63:0]		n_data_out, n_data_out_n;
+	reg				valid, valid_n;
+	reg 		[63:0]		data_out;
 
-	reg 		[15:0] 		n_base, n_base_n;
 	reg 		[15:0] 		origin		[0:3];
 	reg 		[3:0]		bu_cnt,   bu_cnt_n;
 	
 	wire 		[15:0] 		delta		[0:62];
 	// stage 2 var
 	
-	//
 	always @(*) begin
 		base_word_n = base_word;
 		code_buf_i = code_buf;
@@ -70,7 +67,7 @@ module BPC_DECOMP
 			end
 		end
 		else begin
-			if (n_valid) begin
+			if (valid) begin
 				ready = 0;
 			end
 			else begin
@@ -92,6 +89,7 @@ module BPC_DECOMP
 			end
 			in_cnt_n = in_cnt + 1;
 		end
+
 		////////////////////////////////////////////////////////////////////////////////////////////
 		code_buf_n = code_buf_o;
 		buf_size_n = buf_size_o;
@@ -99,7 +97,45 @@ module BPC_DECOMP
 		for (i=0; i<16; i=i+1) 
 			bit_plane_n[i] = bit_plane[i];
 		bp_cnt_n = bp_cnt;
-		
+		valid_bp_n = valid_bp;
+
+		if (!valid_bp & valid_d[0]) begin
+			if (bp_cnt == 0)
+				bit_plane_n[bp_cnt] = dbx[0];
+			else		
+				bit_plane_n[bp_cnt] = do_xor[0] ? dbx[0] ^ bit_plane[bp_cnt-1] : dbx[0];
+			if (bp_cnt <= 14)
+				bp_cnt_n = bp_cnt + 1;
+			else
+				valid_bp_n = 1;
+
+			if (valid_d[1]) begin
+				bit_plane_n[bp_cnt+1] = do_xor[1] ? dbx[1] ^ bit_plane_n[bp_cnt] : dbx[1];
+				if (bp_cnt <= 13)
+					bp_cnt_n = bp_cnt + 2;
+				else
+					valid_bp_n = 1;
+
+				if (valid_d[2]) begin
+					bit_plane_n[bp_cnt+2] = do_xor[2] ? dbx[2] ^ bit_plane_n[bp_cnt+1] : dbx[2];
+					if (bp_cnt <= 12)
+						bp_cnt_n = bp_cnt + 3;
+					else
+						valid_bp_n = 1;
+
+					if (valid_d[3]) begin
+						bit_plane_n[bp_cnt+3] = do_xor[3] ? dbx[3] ^ bit_plane_n[bp_cnt+2] : dbx[3];
+						if (bp_cnt <= 11)
+							bp_cnt_n = bp_cnt + 4;
+						else
+							valid_bp_n = 1;
+					end
+				end
+			end
+		end
+
+		if (eop_i & bp_cnt <= 15) 	valid_bp_n = 1;	
+		/*
 		if (valid_d[0]) begin
 			if (bp_cnt == 'd0) begin
 				bit_plane_n[bp_cnt] = dbx[0];
@@ -127,26 +163,28 @@ module BPC_DECOMP
 				end
 			end
 		end
-
+		
 	
-		valid_bp = (bp_cnt == 15);
+		valid_bp_n = (bp_cnt == 15);
 
 		if (valid_d[0] & eop_i & bp_cnt <= 14) begin
 			bp_cnt_n = 15;
 		end
+		*/
 		///////////////////////////////////////////////////////////////////////////////////////////
 		bu_cnt_n = bu_cnt;
-		n_valid_n = n_valid;
-		//n_base_n = n_base;
-		n_data_out = 0;
-		sop = (bu_cnt == 0 & n_valid);
-		eop = (bu_cnt == 15 & n_valid);
+	
+		data_out = 0;
 
-		if (valid_bp) begin
-			n_valid_n = 1;
-		end
+		sop = (bu_cnt == 0 & valid);
+		eop = (bu_cnt == 15 & valid);
 
-		if (n_valid & ready_i) begin
+		valid = (valid_bp == 1);
+		//if (valid_bp) begin
+		//	valid = 1;
+		//end
+
+		if (valid & ready_i) begin
 			if (bu_cnt == 'd0) begin
 				origin[0] = base_word;
 				origin[1] = base_word + delta[0];
@@ -160,7 +198,7 @@ module BPC_DECOMP
 				origin[3] = base_word + delta[bu_cnt*4 + 2];
 			end
 			
-			n_data_out = {origin[0], origin[1], origin[2], origin[3]};
+			data_out = {origin[0], origin[1], origin[2], origin[3]};
 
 			if (bu_cnt <= 14) begin
 				bu_cnt_n = bu_cnt + 1;
@@ -168,17 +206,19 @@ module BPC_DECOMP
 
 			if (bu_cnt == 15) begin
 				in_cnt_n = 0;
-				n_valid_n = 0;
+				valid_n = 0;
 				code_buf_n = 0;
 				buf_size_n = 0;
 				zrl_cnt_n = 0;
 				bp_cnt_n = 0;
+				valid_bp_n = 0;
 				bu_cnt_n = 0;
 				for (i=0; i<16; i=i+1) begin
 					bit_plane_n[i] = 0;
 				end
 			end
 		end
+		
 	end
 
 	DECODER_GROUP DEC_GRP(
@@ -217,12 +257,11 @@ module BPC_DECOMP
 			bp_cnt 			<= 'd0;
 			in_cnt 			<= 'd0;
 			base_word 		<= 'd0;
-			n_get			<= 'd0;
+			valid_bp 		<= 'd0;
 			for (i=0; i<16; i=i+1) begin
 				bit_plane[i] 	<= 'd0;
 			end
-			//n_base			<= 'd0;
-			n_valid			<= 'd0;
+			valid			<= 'd0;
 			bu_cnt			<= 'd0;
 		end
 		else begin
@@ -232,12 +271,11 @@ module BPC_DECOMP
 			bp_cnt 			<= bp_cnt_n;
 			in_cnt			<= in_cnt_n;
 			base_word		<= base_word_n;
-			n_get			<= n_get_n;
+			valid_bp		<= valid_bp_n;
 			for (i=0; i<16; i=i+1) begin
 				bit_plane[i] 	<= bit_plane_n[i];
 			end
-			//n_base			<= n_base_n;
-			n_valid			<= n_valid_n;
+			valid			<= valid_n;
 			bu_cnt			<= bu_cnt_n;
 		end
 	end
@@ -245,8 +283,8 @@ module BPC_DECOMP
 	assign 	ready_o = ready;
 	assign 	sop_o = sop;
 	assign 	eop_o = eop;
-	assign	valid_o = n_valid;
-	assign 	data_o = n_data_out;
+	assign	valid_o = valid;
+	assign 	data_o = data_out;
 
 	
 endmodule
