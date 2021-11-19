@@ -35,6 +35,7 @@ module ZRL_COMP
     assign ready_o = ready_i;
     
     always @(*) begin
+
         if (valid_i & ready_i) begin
 	    sop_n = 'b0;
 	    eop_n = 'b0;
@@ -207,6 +208,10 @@ module ZRL_COMP
 	    valid_n = 1'b1;
         end else begin
 	    valid_n = 1'b0;
+	    data_n = 'b0;
+	    size_n = 'b0;
+	    sop_n = 1'b0;
+	    eop_n = 1'b0;
 	end
     end
   

@@ -43,6 +43,8 @@ module SR_COMP
     	bcnt_n = bcnt;
 	d_valid_out_n = 1'b0;
 	s_valid_out_n = 1'b0;
+	data_out_n = 'b0;
+	flag_out_n = 1'b0;
         if (valid_i & ready_i) begin
            if (bcnt[0]) begin
 		d_valid_out_n = 1'b1;

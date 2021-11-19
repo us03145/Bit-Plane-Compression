@@ -1,10 +1,10 @@
 module COMP_TOP #(
     parameter   D_BITWIDTH        = 64,
-    parameter   D_STAGE           = 16,
-    parameter   D_STAGE_BITWIDTH  = $clog2(16),
+    parameter   D_STAGE           = 32,
+    parameter   D_STAGE_BITWIDTH  = $clog2(32),
     parameter   S_BITWIDTH        = 11,
-    parameter   S_STAGE           = 16,
-    parameter   S_STAGE_BITWIDTH  = $clog2(16),
+    parameter   S_STAGE           = 8,
+    parameter   S_STAGE_BITWIDTH  = $clog2(8),
     parameter   SR_BITWIDTH       = 1
 ) (
     input   wire          clk,
@@ -23,7 +23,7 @@ module COMP_TOP #(
     output  wire          eop_o
 );
 
-    wire  [145:0] bpc_data_mid;
+    wire  [151:0] bpc_data_mid;
     wire  [7:0]   bpc_size_mid;
     wire          bpc_sop_mid;
     wire          bpc_eop_mid;
@@ -35,8 +35,6 @@ module COMP_TOP #(
     wire          bpc_d_valid;
     wire          bpc_s_valid;
     wire          bpc_ready_mid;
-    wire          bpc_sop_out;
-    wire          bpc_eop_out;   
 
     wire  [63:0]  bpc_fifo_d_out;
     wire          bpc_fifo_d_full;
@@ -63,8 +61,6 @@ module COMP_TOP #(
     wire          zrl_d_valid;
     wire          zrl_s_valid;
     wire          zrl_ready_mid;
-    wire          zrl_sop_out;
-    wire          zrl_eop_out;
     
     wire  [63:0]  zrl_fifo_d_out;
     wire          zrl_fifo_d_full;
@@ -147,9 +143,7 @@ module COMP_TOP #(
 	.size_o           (bpc_size_out),
 	.d_valid          (bpc_d_valid),
 	.s_valid          (bpc_s_valid),
-	.ready_o          (bpc_ready_mid),
-	.sop_o            (bpc_sop_out),
-	.eop_o            (bpc_eop_out)
+	.ready_o          (bpc_ready_mid)
     );
     FIFO #(
         .BITWIDTH         (D_BITWIDTH),
@@ -219,9 +213,7 @@ module COMP_TOP #(
 	.size_o           (zrl_size_out),
 	.d_valid          (zrl_d_valid),
 	.s_valid          (zrl_s_valid),
-	.ready_o          (zrl_ready_mid),
-	.sop_o            (zrl_sop_out),
-	.eop_o            (zrl_eop_out)
+	.ready_o          (zrl_ready_mid)
     );
     FIFO #(
         .BITWIDTH         (D_BITWIDTH),
@@ -343,7 +335,8 @@ module COMP_TOP #(
                   (ok_flag == 3'b001) ? 2'b11 :
                   (ok_flag == 3'b000) ? 2'b11 : 2'b00;
 
-    assign data_o = (pad_flag == 1'b1) ? 'b0 :
+    assign data_o = (done == 1'b0) ? 'b0 :
+	            (pad_flag == 1'b1) ? 'b0 :
 	            (mode == 2'b01) ? sr_fifo_d_out :
                     (mode == 2'b10) ? zrl_fifo_d_out :
                     (mode == 2'b11) ? bpc_fifo_d_out : 'b0;
