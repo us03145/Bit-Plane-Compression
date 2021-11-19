@@ -134,43 +134,8 @@ module BPC_DECOMP
 			end
 		end
 
-		if (eop_i & bp_cnt <= 15) 	valid_bp_n = 1;	
-		/*
-		if (valid_d[0]) begin
-			if (bp_cnt == 'd0) begin
-				bit_plane_n[bp_cnt] = dbx[0];
-			end else begin
-				bit_plane_n[bp_cnt] = do_xor[0] ? dbx[0] ^ bit_plane[bp_cnt-1] : dbx[0];
-			end
-			if (bp_cnt <= 14)
-				bp_cnt_n = bp_cnt + 1;
+		if (valid_d[0] &eop_i & bp_cnt <= 15) 	valid_bp_n = 1;	
 
-			if (valid_d[1]) begin
-				bit_plane_n[bp_cnt+1] = do_xor[1] ? dbx[1] ^ bit_plane_n[bp_cnt] : dbx[1];
-				if (bp_cnt <= 13)
-					bp_cnt_n = bp_cnt + 2;
-
-				if (valid_d[2]) begin
-					bit_plane_n[bp_cnt+2] = do_xor[2] ? dbx[2] ^ bit_plane_n[bp_cnt+1] : dbx[2];
-					if (bp_cnt <= 12) 
-						bp_cnt_n = bp_cnt + 3;
-
-					if(valid_d[3]) begin
-						bit_plane_n[bp_cnt+3] = do_xor[3] ? dbx[3] ^ bit_plane_n[bp_cnt+2] : dbx[3];
-						if (bp_cnt <= 11)
-							bp_cnt_n = bp_cnt + 4;
-					end
-				end
-			end
-		end
-		
-	
-		valid_bp_n = (bp_cnt == 15);
-
-		if (valid_d[0] & eop_i & bp_cnt <= 14) begin
-			bp_cnt_n = 15;
-		end
-		*/
 		///////////////////////////////////////////////////////////////////////////////////////////
 		bu_cnt_n = bu_cnt;
 	
