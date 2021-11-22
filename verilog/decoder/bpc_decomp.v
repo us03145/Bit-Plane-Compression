@@ -45,7 +45,7 @@ module BPC_DECOMP
 	// output var
 	
 	// stage 2 var
-	reg				valid, valid_n;
+	reg				valid;
 	reg 		[63:0]		data_out;
 
 	reg 		[15:0] 		origin		[0:3];
@@ -64,6 +64,9 @@ module BPC_DECOMP
 		if (in_cnt <= 7) begin
 			if (buf_size <= 64) begin
 				ready = 1;
+			end
+			else begin
+				ready = 0;
 			end
 		end
 		else begin
@@ -109,21 +112,21 @@ module BPC_DECOMP
 			else
 				valid_bp_n = 1;
 
-			if (valid_d[1]) begin
+			if (!valid_bp_n & valid_d[1]) begin
 				bit_plane_n[bp_cnt+1] = do_xor[1] ? dbx[1] ^ bit_plane_n[bp_cnt] : dbx[1];
 				if (bp_cnt <= 13)
 					bp_cnt_n = bp_cnt + 2;
 				else
 					valid_bp_n = 1;
 
-				if (valid_d[2]) begin
+				if (!valid_bp_n & valid_d[2]) begin
 					bit_plane_n[bp_cnt+2] = do_xor[2] ? dbx[2] ^ bit_plane_n[bp_cnt+1] : dbx[2];
 					if (bp_cnt <= 12)
 						bp_cnt_n = bp_cnt + 3;
 					else
 						valid_bp_n = 1;
 
-					if (valid_d[3]) begin
+					if (!valid_bp_n & valid_d[3]) begin
 						bit_plane_n[bp_cnt+3] = do_xor[3] ? dbx[3] ^ bit_plane_n[bp_cnt+2] : dbx[3];
 						if (bp_cnt <= 11)
 							bp_cnt_n = bp_cnt + 4;
@@ -134,8 +137,8 @@ module BPC_DECOMP
 			end
 		end
 
-		if (valid_d[0] &eop_i & bp_cnt <= 15) 	valid_bp_n = 1;	
-
+		if (valid_d[0] &eop_i & bp_cnt <= 15) 	valid_bp_n = 1;
+	
 		///////////////////////////////////////////////////////////////////////////////////////////
 		bu_cnt_n = bu_cnt;
 	
@@ -145,9 +148,6 @@ module BPC_DECOMP
 		eop = (bu_cnt == 15 & valid);
 
 		valid = (valid_bp == 1);
-		//if (valid_bp) begin
-		//	valid = 1;
-		//end
 
 		if (valid & ready_i) begin
 			if (bu_cnt == 'd0) begin
@@ -171,7 +171,6 @@ module BPC_DECOMP
 
 			if (bu_cnt == 15) begin
 				in_cnt_n = 0;
-				valid_n = 0;
 				code_buf_n = 0;
 				buf_size_n = 0;
 				zrl_cnt_n = 0;
@@ -226,7 +225,6 @@ module BPC_DECOMP
 			for (i=0; i<16; i=i+1) begin
 				bit_plane[i] 	<= 'd0;
 			end
-			valid			<= 'd0;
 			bu_cnt			<= 'd0;
 		end
 		else begin
@@ -240,7 +238,6 @@ module BPC_DECOMP
 			for (i=0; i<16; i=i+1) begin
 				bit_plane[i] 	<= bit_plane_n[i];
 			end
-			valid			<= valid_n;
 			bu_cnt			<= bu_cnt_n;
 		end
 	end
