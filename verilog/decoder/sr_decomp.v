@@ -26,9 +26,6 @@ module SR_DECOMP
 	// Sequential logic //////////////////////////////////////////////
 	always @(posedge clk or negedge rst_n) begin
 		if (!rst_n) begin
-			//ready 		<= 1'b0;
-			//data_out 	<= 64'b0;
-			//valid_out 	<= 1'b0;
 			bcnt 		<= 4'b0;
 		end
 		else begin
@@ -54,7 +51,6 @@ module SR_DECOMP
 		valid_out = 0;
 		data_out = 0;
 
-		//if (sop_i) bcnt = 0;
 		if (bcnt % 2 == 0) begin
 			ready = 1;
 		end else begin
@@ -111,6 +107,3 @@ module SR_DECOMP
 	assign valid_o = valid_out;
 	
 endmodule
-
-
-
