@@ -17,21 +17,15 @@ module DECOMP_TOP (
 	reg 	[1:0] 		mode;
 	parameter IDLE = 2'b00, BPC = 2'b01, ZRL = 2'b10, SR = 2'b11;
 
-	//always @(posedge clk or negedge rst_n) begin
-	//	if (!rst_n) begin
-	//		mode <= 'd0;
-	//	end
-	//	else begin
-	//		mode <= mode_n;
-	//	end
-	//end
-
 	always @(*) begin
-		//mode_n = mode;
-		if (sop_i) begin
-			mode = (data_i[63:62] == 2'b00) ? BPC :
-			       (data_i[63:62] == 2'b01) ? ZRL :
-			       (data_i[63]    == 1'b1 ) ? SR  : IDLE;
+		if (!rst_n)
+			mode = 0;
+		else begin
+			if (sop_i) begin
+				mode = (data_i[63:62] == 2'b00) ? BPC :
+				       (data_i[63:62] == 2'b01) ? ZRL :
+				       (data_i[63]    == 1'b1 ) ? SR  : mode;
+			end
 		end
 	end
 
@@ -116,9 +110,6 @@ module DECOMP_TOP (
 	assign bpc_valid_i 	= (mode == BPC) ? valid_i : 'b0;
 
 	assign ready_o 		= zrl_ready_o & sr_ready_o & bpc_ready_o;
-//	assign ready_o 		= (mode == ZRL) ? zrl_ready_o :
-//				  (mode == SR ) ? sr_ready_o  :
-//				  (mode == BPC) ? bpc_ready_o : 'b0;
 
 	assign data_o 		= (mode == ZRL) ? zrl_data_o :
 				  (mode == SR ) ? sr_data_o  :
